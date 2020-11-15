@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--to tell the browser this is an HTML file-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'/> <!--I used the <meta> tag to describe information about the page, in this case I'm telling
+      the browser to match the website width with the width of the device in which the website is being seen.
+      By adding this my page is now mobile friendly.-->
+    <title>1917</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
+        the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
+        the type attribute describes what type of document it is.-->
+  </head>
+  <body>
+    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page-->
+      <header>
+        <h1>1917</h1>
+        <p>An websheet about the movie <i>1917</i></p>
+      <nav>  <a href="index.html">About</a> <a href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
+      using to <a> tags to link the two pages--> </nav>
+      </header>
+      <section>
+        <h1>Movie Synopsis</h1>
+        <p><!--Write synopsis here--></p>
+      </section>
+      <section>
+        <p>Here's the movie trailer:</p>
+        <!--To insert video in HTML is necessary to use the <video> tag, inside that we need to tell the browser where he can find the video,
+        by using the <source> element, this element also tells what type of file it is. It's important to put the three types of audio format
+        because the browser will pick the first file format that it works with.-->
+        <video controls poster="img/1917poster.jpg"> <!--I added the controls panel so that the people can choose when to play the video,
+        and added the video poster to display until the play button is pressed-->
+          <source src="vid/1917_trailer.ogv" type='video/ogg' />
+          <source src="vid/1917_trailer.webm" type='video/webm' />
+          <source src="vid/1917_trailer.mp4" type='video/mp4' />
+          <!--There are some browsers that don't support the <video> element, having that in mind we can provide a
+          little text and a link to download the video.-->
+          <p>Sorry, it seems that your browser does not support the video element. Please click <a href='vid/.mp4'>here</a> to download an mp4 of the video.</p>
+        </video>
+      </section>
+      <footer>
+   <p>Website made by Carolina Roques (P2598958)</p>
+      </footer>
+    </article>
+  </body>
+</html>

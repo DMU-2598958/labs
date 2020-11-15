@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!--to tell the browser this is an HTML file-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'/> <!--I used the <meta> tag to describe information about the page, in this case I'm telling
+      the browser to match the website width with the width of the device in which the website is being seen.
+      By adding this my page is now mobile friendly.-->
+    <title>1917</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
+        the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
+        the type attribute describes what type of document it is.-->
+  </head>
+  <body>
+    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page-->
+      <header>
+        <h1>1917</h1>
+        <p>An websheet about the movie <i>1917</i></p>
+      <nav>  <a href="index.html">About</a> <a href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
+      using to <a> tags to link the two pages--> </nav>
+      </header>
+      <section>
+<!--George Mackay part
+tell where the interviw is from-->
+<audio controls><!--I added the controls panel so that the people can choose when to play the audio-->
+  <source src="aud/George_Mackay_interview.ogg" type='audio/ogg' />
+  <source src="aud/George_Mackay_interview.mp3" type='audio/mpeg' />
+  <source src="aud/George_Mackay_interview.wav" type='audio/wav' />
+  <p>Your browser does not support the audio element. Please click <a href='sounds/dog.mp3'>here</a> to download an mp3 of the audio.</p>
+</audio>
+      </section>
+      <section>
+<!--Dean-Charles Chapman part
+tell where the interviw is from-->
+<audio controls><!--I added the controls panel so that the people can choose when to play the audio-->
+  <source src="aud/Dean-Charles_interview.ogg" type='audio/ogg' />
+  <source src="aud/Dean-Charles_interview.mp3" type='audio/mpeg' />
+  <source src="aud/Dean-Charles_interview.wav" type='audio/wav' />
+  <p>Your browser does not support the audio element. Please click <a href='sounds/dog.mp3'>here</a> to download an mp3 of the audio.</p>
+</audio>
+      </section>
+      <footer>
+   <p>Website made by Carolina Roques (P2598958)</p>
+      </footer>
+    </article>
+  </body>
+</html>
