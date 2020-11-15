@@ -19,23 +19,43 @@
       using to <a> tags to link the two pages--> </nav>
       </header>
       <section>
+        <!--To add an image to a website we need to use the <img> tag, then,
+        inside that, we need to put two attributes: the source, that tells where the image is, and the alt attribute, that provides a small description of
+        the image to the browser, it's also what the screen reader will read. With the style attribute, I told the browser to limit the width of the image
+        to 100%, so that it can't be any wider than the device it's in-->
+        <img src="img/George Mackay3.jpg" alt="George Mackay" style="max-width: 100%"/>
 <!--George Mackay part
 tell where the interviw is from-->
+<!--To insert audio in HTML is necessary to use the <audio> tag, inside that we need to tell the browser where he can find the audio,
+by using the <source> element, this element also tells what type of file it is. It's important to put the three types of audio format
+because the browser will pick the first file format that it works with.-->
 <audio controls><!--I added the controls panel so that the people can choose when to play the audio-->
   <source src="aud/George_Mackay_interview.ogg" type='audio/ogg' />
   <source src="aud/George_Mackay_interview.mp3" type='audio/mpeg' />
   <source src="aud/George_Mackay_interview.wav" type='audio/wav' />
-  <p>Your browser does not support the audio element. Please click <a href='sounds/dog.mp3'>here</a> to download an mp3 of the audio.</p>
+  <!--There are some browsers that don't support the <audio> element, having that in mind we can provide a
+  little text and a link to download the audio.-->
+  <p>Your browser does not support the audio element. Please click <a href='aud/George_Mackay_interview.mp3'>here</a> to download an mp3 of the audio.</p>
 </audio>
       </section>
       <section>
+        <!--To add an image to a website we need to use the <img> tag, then,
+        inside that, we need to put two attributes: the source, that tells where the image is, and the alt attribute, that provides a small description of
+        the image to the browser, it's also what the screen reader will read. With the style attribute, I told the browser to limit the width of the image
+        to 100%, so that it can't be any wider than the device it's in-->
+        <img src="img/Dean_Charles_Chapman.jpg" alt="Dean-Charles Chapman" style="max-width: 100%"/>
 <!--Dean-Charles Chapman part
 tell where the interviw is from-->
+<!--To insert audio in HTML is necessary to use the <audio> tag, inside that we need to tell the browser where he can find the audio,
+by using the <source> element, this element also tells what type of file it is. It's important to put the three types of audio format
+because the browser will pick the first file format that it works with.-->
 <audio controls><!--I added the controls panel so that the people can choose when to play the audio-->
   <source src="aud/Dean-Charles_interview.ogg" type='audio/ogg' />
   <source src="aud/Dean-Charles_interview.mp3" type='audio/mpeg' />
   <source src="aud/Dean-Charles_interview.wav" type='audio/wav' />
-  <p>Your browser does not support the audio element. Please click <a href='sounds/dog.mp3'>here</a> to download an mp3 of the audio.</p>
+  <!--There are some browsers that don't support the <audio> element, having that in mind we can provide a
+  little text and a link to download the audio.-->
+  <p>Your browser does not support the audio element. Please click <a href='aud/Dean-Charles_interview.mp3'>here</a> to download an mp3 of the audio.</p>
 </audio>
       </section>
       <footer>
