@@ -1,2 +1,15 @@
 header{
   text-align: center;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+header,
+section,
+footer { /**/
+  margin: 20px;
+  padding: 10px;
+}
+  img{
+    border-radius: 5px
+}
