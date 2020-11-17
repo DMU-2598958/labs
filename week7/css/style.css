@@ -1,0 +1,35 @@
+body{
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  background-color: #323638;
+  color: #EDEFF2
+}
+footer{
+  background-color: #323638;
+  color: #EDEFF2
+}
+section{
+  background-color:#EDEFF2;
+  box-shadow: 5px 5px 5px #C9C9C9
+}
+a{
+  color:#EDEFF2
+}
+header,
+section,
+footer {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2px
+}
+img{
+  width: 100%;
+  border-radius: 5px
+}
+span.label{
+  font-weight: bold
+}
