@@ -13,3 +13,11 @@ footer { /**/
   img{
     border-radius: 5px
 }
+p.synopsis{
+  text-indent: 3ch;
+  text-align: justify;
+}
+video{
+  margin-left: auto;
+  margin-right: auto;
+}
