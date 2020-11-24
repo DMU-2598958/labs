@@ -1,16 +1,26 @@
 header{
   text-align: center;
+  padding: 20px;
+  margin: -8px;
+  color: white;
+  background-image: url("../img/1917_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: block;
 }
 body{
   font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black
 }
-header,
 section,
-footer { /**/
+footer{ /**/
   margin: 20px;
   padding: 10px;
 }
-  img{
+}
+img{
     border-radius: 5px
 }
 p.synopsis{
@@ -20,4 +30,10 @@ p.synopsis{
 video{
   margin: 0 auto;
   display: block;
+}
+h1.title{
+  font-size: 45px
+}
+p.subtitle{
+  font-size: 20px
 }
