@@ -23,6 +23,11 @@ footer{ /**/
 footer{
   font-size: 12px
 }
+.floatfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .title{
   font-size: 45px
 }
@@ -42,7 +47,11 @@ a{
   color: #51118C;
 }
 img{
-    border-radius: 5px
+    border-radius: 5px;
+    float: left;
+    width: 160px;
+    margin-right:15px;
+    margin-bottom: 15px;
 }
 video{
   margin: 0 auto;
