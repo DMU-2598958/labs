@@ -1,7 +1,7 @@
 body{
   font-family: 'Poppins', sans-serif;
   color: white;
-  background-color: black
+  background-color: black;
 }
 header{
   text-align: center;
@@ -16,35 +16,47 @@ header{
   display: block;
 }
 section,
-footer{ /**/
+footer{
   margin: 20px;
   padding: 10px;
 }
-footer{
-  font-size: 12px
+.scast{
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px
 }
-.floatfix::after {
+footer{
+  font-size: 12px;
+}
+.floatfix::after {  /*When an element is floated, its size is no longer used when calculating the size of its parent*/
   content: "";
   display: block;
   clear: both;
 }
 .title{
-  font-size: 45px
+  font-size: 45px;
 }
 .cast{
   text-align: center;
-  font-size: 20px
+  font-size: 20px;
+  padding-bottom: 20px;
 }
-p.subtitle{
-  font-size: 20px
+.subtitle{
+  font-size: 20px;
 }
 p.synopsis,
 p.pcast{
-  text-indent: 3ch;
-  text-align: justify;
+  text-indent: 3ch; /*use to create the paragraph mark*/
+  text-align: justify; /*use to justify the text*/
 }
 a{
   color: #51118C;
+}
+.menu{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu:hover{
+  opacity: 0.6;
 }
 img{
     border-radius: 5px;
@@ -54,6 +66,6 @@ img{
     margin-bottom: 15px;
 }
 video{
-  margin: 0 auto;
+  margin: 0 auto;      /*use this CSS settings to center the video element*/
   display: block;
 }

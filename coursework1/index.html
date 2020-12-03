@@ -17,10 +17,10 @@
       <header>
         <h1 class="title">1917</h1>
         <p class="subtitle">An websheet about the movie 1917</p>
-      <nav>  <a href="index.html">About</a> <a href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
+      <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
       using to <a> tags to link the two pages--> </nav>
       </header>
-      <section class="padding">
+      <section>
         <h1>Movie Synopsis</h1>
         <p class="synopsis">1917 tells the story of two British soldiers, in World War I, tasked with stopping a battalion from walking into a German ambush. </p>
 	<p class="synopsis">On April 6th, 1917, the aerial reconnaissance of the British army noticed that the Germany army was not in retreat but making a strategic withdraw.
@@ -52,7 +52,8 @@
         by using the <source> element, this element also tells what type of file it is. It's important to put the three types of video format
         because the browser will pick the first file format that it works with.-->
         <video controls poster="img/1917poster.jpg" style="max-width: 100%"> <!--I added the controls panel so that the people can choose when to play the video,
-        and added the video poster to display until the play button is pressed-->
+        and added the video poster to display until the play button is pressed. I also told the browser to limit the
+          width of the video to 100%, so that it can't be any wider than the device it's in-->
           <source src="vid/1917_trailer.ogv" type='video/ogg' />
           <source src="vid/1917_trailer.webm" type='video/webm' />
           <source src="vid/1917_trailer.mp4" type='video/mp4' />
