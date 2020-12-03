@@ -58,6 +58,9 @@ a{
 .menu:hover{
   opacity: 0.6;
 }
+.ref{
+  color: white
+}
 img{
     border-radius: 5px;
     float: left;
