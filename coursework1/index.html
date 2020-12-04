@@ -9,16 +9,17 @@
       <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
         the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
         the type attribute describes what type of document it is.-->
-        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Added this font from Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Added this font from Google Fonts and then linked it to the style sheet so it could be applied
+        to all the pages-->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
   </head>
   <body>
     <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page-->
       <header>
-        <h1 class="title">1917</h1>
+        <h1 class="title">1917</h1> <!--Added the classes so I could customize all the specific elements of this header separately from the others <h1>,<p>, and <a> elements-->
         <p class="subtitle">An websheet about the movie 1917</p>
       <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
-      using to <a> tags to link the two pages--> </nav>
+      using to <a> tags to link the two pages. I included this inside an <nav> element --> </nav>
       </header>
       <section>
         <h1>Movie Synopsis</h1>
@@ -27,7 +28,10 @@
   Tom Blake is ordered by General Erinmore to, along with Will Schofield, deliver a message to Colonel Mackenzie of the Second Battalion of the Devonshire
   Regiment warning them about the German attack that could kill 1.600, including Tom’s brother. </p>
 	<p class="synopsis">“Schofield and Blake cross no man's land to reach the abandoned German trenches. In an underground barracks, they discover a booby-trap tripwire,
-  which is promptly triggered by a rat. The explosion almost kills Schofield, but Blake saves him, and the two escape. <img class="img3" src="img/image3.jpg" alt="1917's shoot" style="max-width: 100%">  They arrive at an abandoned farmhouse,
+  which is promptly triggered by a rat. The explosion almost kills Schofield, but Blake saves him, and the two escape.<!--To add an image to a website we need to use
+  the <img> tag, then,inside that, we need to put two attributes: the source, that tells where the image is, and the alt attribute, that provides a small description
+  of the image to the browser, it's also what the screen reader will read. With the style attribute, I told the browser to limit the width of the image
+  to 100%, so that it can't be any wider than the device it's in--> <img class="img3" src="img/image3.jpg" alt="1917's shoot" style="max-width: 100%">  They arrive at an abandoned farmhouse,
   where they witness a German plane being shot down. Schofield and Blake drag the burned pilot from the plane. However, the pilot stabs Blake and is shot dead
   by Schofield. Schofield comforts Blake as he dies, promising to complete the mission and to write to Blake's mother. Schofield is then picked up by a passing
   British unit. </p>
