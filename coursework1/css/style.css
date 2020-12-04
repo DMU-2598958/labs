@@ -68,6 +68,12 @@ img{
     margin-right:15px;
     margin-bottom: 15px;
 }
+.img3{
+  border-radius: 5px;
+  width: 200px;
+  float: right;
+  margin:10px;
+}
 video{
   margin: 0 auto;  /*use this CSS settings to center the video element*/
   display: block;
