@@ -1,9 +1,8 @@
 body{
   font-family: 'Poppins', sans-serif;
   color: white;
-  background-image:linear-gradient(#303942, #384556, #465262, #444653, #6a5b60, #6e585b);
+  background-image:linear-gradient(#2a343d,#3f4b59,#4e505f,#514a52,#835244, #c37142, rgba(253, 166, 73, 0.8));
 }
-/*#2a343d,#3f4b59,#4e505f,#514a52,#835244, #c37142, rgba(253, 166, 73, 0.8)*/
 header{
   text-align: center;
   padding: 20px;
