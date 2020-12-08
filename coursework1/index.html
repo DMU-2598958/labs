@@ -14,15 +14,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <article class=""> <!--I'm going to use the semantic HTML elements (article, header, nav, section, footer) to add some structure and help describe the contents of my page-->
-      <header>
+    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page, starting with an article,
+    a self-contained composition-->
+      <header> <!--Inside the article I'm putting an header which, in this case is going to mark an introduction and navigation content,
+        since I placed a <nav> element with links, a menu, inside it-->
         <h1 class="title">1917</h1> <!--Added the classes so I could customize all the specific elements of this header separately from the others <h1>,<p>, and <a> elements-->
         <p class="subtitle">An websheet about the movie 1917</p>
       <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
       using to <a> tags to link the two pages.--> </nav>
       </header>
       <section>
-        <h1>Movie Synopsis</h1> 
+        <h1>Movie Synopsis</h1> <!--Even though I already used an <h1> in this page, as this is inside an <section>, using a <h1> here tells the browser that this is the most
+        important heading in this section, but because it's in a <section> it's not as important as the main heading in the <header>-->
         <p class="synopsis">1917 tells the story of two British soldiers, in World War I, tasked with stopping a battalion from walking into a German ambush. </p>
 	<p class="synopsis">On April 6th, 1917, the aerial reconnaissance of the British army noticed that the Germany army was not in retreat but making a strategic withdraw.
   Tom Blake is ordered by General Erinmore to, along with Will Schofield, deliver a message to Colonel Mackenzie of the Second Battalion of the Devonshire

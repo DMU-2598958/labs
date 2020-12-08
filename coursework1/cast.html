@@ -9,16 +9,19 @@
       <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
         the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
         the type attribute describes what type of document it is.-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Added this font from Google Fonts and then linked it to the style sheet so it could be applied
+        to all the pages-->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page-->
-      <header>
-        <h1 class="title">1917</h1>
+    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page, starting with an article,
+    a self-contained composition-->
+      <header> <!--Inside the article I'm putting an header which, in this case is going to mark an introduction and navigation content,
+        since I placed a <nav> element with links, a menu, inside it-->
+        <h1 class="title">1917</h1><!--Added the classes so I could customize all the specific elements of this header separately from the others <h1>,<p>, and <a> elements-->
         <p class="subtitle">An websheet about the movie 1917</p>
         <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
-        using to <a> tags to link the two pages--> </nav>
+        using two <a> tags to link the two pages--> </nav>
       </header>
       <section class="scast">
         <h1 class="cast">George Mackay</h1>
@@ -42,7 +45,6 @@
             nominations in nine other categories, winning three technical awards."</p>
           <p>Information taken from George MacKay's <a class="ref" href="https://en.wikipedia.org/wiki/George_MacKay_(actor)">Wikipedia</a> page
           <div class="floatfix"></div>
-<!--tell where the interview, the image and the information is from-->
 <!--To insert audio in HTML is necessary to use the <audio> tag, inside that we need to tell the browser where he can find the audio,
 by using the <source> element, this element also tells what type of file it is. It's important to put the three types of audio format
 because the browser will pick the first file format that it works with.-->
