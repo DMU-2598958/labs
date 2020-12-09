@@ -9,21 +9,21 @@
       <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
         the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
         the type attribute describes what type of document it is.-->
-        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Added this font from Google Fonts and then linked it to the style sheet so it could be applied
-        to all the pages-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
   </head>
   <body>
     <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page, starting with an article,
     a self-contained composition-->
-      <header> <!--Inside the article I'm putting an header which, in this case is going to mark an introduction and navigation content,
-        since I placed a <nav> element with links, a menu, inside it-->
-        <h1 class="title">1917</h1> <!--Added the classes so I could customize all the specific elements of this header separately from the others <h1>,<p>, and <a> elements-->
+      <header> <!--Inside the article, I'm putting a header which, in this case, is going to mark an introduction and navigation content, since I placed an
+        <nav> element with links, a menu, inside it-->
+        <h1 class="title">1917</h1> <!--I'm using an <h1> because this is the most important heading. Added the classes so I could customize all the specific elements of this header separately
+          from the others <h1>,<p>, and <a> elements-->
         <p class="subtitle">An websheet about the movie 1917</p>
-      <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm
-      using two <a> tags to link the two pages.--> </nav>
+      <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> <!--The anchor elements are used for adding links to pages, I'm using two <a> tags
+        to link the two pages. Then I put them inside a <nav> because this defines a navigation section, a menu with links for other pages--> </nav>
       </header>
-      <section>
+      <section> <!--The <section> element-->
         <h1>Movie Synopsis</h1> <!--Even though I already used an <h1> in this page, as this is inside an <section>, using a <h1> here tells the browser that this is the most
         important heading in this section, but because it's in a <section> it's not as important as the main heading in the <header>-->
         <p class="synopsis">1917 tells the story of two British soldiers, in World War I, tasked with stopping a battalion from walking into a German ambush. </p>
