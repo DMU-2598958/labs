@@ -12,11 +12,12 @@ body{
   Hex color codes, but the last one is RGBA, having the RGB numbers plus an Alpha chanel that specifies the opacity of the colour.*/
 }
 header{
-  text-align: center; /*to align to header text to the center of the page*/
-  padding: 20px;
-  margin: -8px;
-  background-image: url("../img/1917_header.jpg");
-  background-repeat: no-repeat;
+  text-align: center; /*to align the header text to the center of the page*/
+  padding: 20px; /*used the padding rule to increase, by 20 pixels, the spacing between the content and the edge of the element*/
+  margin: -8px; /*so that the header could go all the way to the edges of the webpage I'm setting the margin to -8 pixels to decrease the space between neighbouring elements*/
+  background-image: url("../img/1917_header.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
+  In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '1917_header.jpg'*/
+  background-repeat: no-repeat; 
   background-size: 1910px;
   background-position: top;
   background-attachment: fixed;
@@ -24,8 +25,8 @@ header{
 }
 section,
 footer{
-  margin: 20px;
-  padding: 10px;
+  margin: 20px; /*so that these elements don't reach the edges of the webpage I'm setting the margin to 20 pixels to increase the space between neighbouring elements*/
+  padding: 10px; /*used the padding rule to increase, by 10 pixels, the spacing between the content and the edge of the element*/
 }
 .scast{
   background-color: rgba(255, 255, 255, 0.05);
@@ -45,21 +46,21 @@ footer{
 .cast{
   text-align: center;
   font-size: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; /*used the padding rule to increase, by 20 pixels, the spacing between the content and only the bottom edge of the element*/
 }
 .subtitle{
   font-size: 20px;
 }
 p.synopsis,
 p.pcast{
-  text-indent: 3ch; /*use to create the paragraph mark*/
-  text-align: justify; /*use to justify the text*/
+  text-indent: 3ch; /*used to create the paragraph mark*/
+  text-align: justify; /*used to justify the text*/
 }
 a{
   color: #51118C;
 }
 .menu{
-  padding-left: 20px;
+  padding-left: 20px;       /*used the padding rule to increase, by 20 pixels, the spacing between the content and the left and right edges of the element*/
   padding-right: 20px;
 }
 .menu:hover{
