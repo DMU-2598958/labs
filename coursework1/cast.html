@@ -15,13 +15,17 @@
         <p class="subtitle">An websheet about the movie 1917</p>
         <nav>  <a class="menu" href="index.html">About</a> <a class="menu" href="cast.html">Cast</a> </nav>
       </header>
+      <!--The <section> element represents a generic section of a document, in this context is a group of related content. I'm using two sections since I
+      have two cast members with different information and headings. However, they have the same class so they can be costumized the same way.-->
       <section class="scast">
+        <!--I explained why I used an <h1> again in the 'About' page-->
         <h1 class="cast">George Mackay</h1>
         <!--To add an image to a website we need to use the <img> tag, then,
         inside that, we need to put two attributes: the source, that tells where the image is, and the alt attribute, that provides a small description of
         the image to the browser, it's also what the screen reader will read. With the style attribute, I told the browser to limit the width of the image
         to 100%, so that it can't be any wider than the device it's in-->
         <img src="img/George Mackay3.jpg" alt="George Mackay" style="max-width: 100%"/>
+        <!--Used the <p> element to add the cast information text, and I put a class so I can customize it in a different way from the other <p> elements-->
         <p class="pcast">George MacKay was born 13 March, 1992 in Hammersmith, London, England, to Kim Baker, a British costume designer, and Paul Christopher
           MacKay, an Australian stage/lighting manager</p>
         <p class="pcast">"In 2002, MacKay was spotted while at The Harrodian School by an acting scout, who asked him if he would like to audition for a role in
@@ -35,7 +39,10 @@
             Ned Kelly in True History of the Kelly Gang directed by Justin Kurzel. (...) MacKay played the lead role of Lance corporal William Schofield, a young
             British World War I soldier in 1917, directed by Sam Mendes. 1917 was nominated for Best Picture in the 92nd Academy Awards, along with
             nominations in nine other categories, winning three technical awards."</p>
-          <p>Information taken from George MacKay's <a class="ref" href="https://en.wikipedia.org/wiki/George_MacKay_(actor)">Wikipedia</a> page
+          <p>Information taken from George MacKay's <a class="ref" href="https://en.wikipedia.org/wiki/George_MacKay_(actor)">Wikipedia</a> page</p> <!--Inside the anchor element I used the html
+            attribute to tell the browser where to navigate to, in this case, to George MacKay's Wikipedia page-->
+            <!--Again, even though I only floated the image, which means the section still has height because of the <p> elements, it is unlikely that all the other text and page will follow the cast text.
+            But even so, to make sure that doesn't happen and this <audio> element doesn't follow the rest of the text, I added the <div> with an floatfix class, so I can clear the float-->
           <div class="floatfix"></div>
 <!--To insert audio in HTML is necessary to use the <audio> tag, inside that we need to tell the browser where he can find the audio,
 by using the <source> element, this element also tells what type of file it is. It's important to put the three types of audio format
@@ -46,10 +53,11 @@ because the browser will pick the first file format that it works with.-->
   <source src="aud/George_Mackay_interview.mp3" type='audio/mpeg' />
   <source src="aud/George_Mackay_interview.wav" type='audio/wav' />
   <!--There are some browsers that don't support the <audio> element, having that in mind we can provide a
-  little text and a link to download the audio.-->
+  little text and a link, with an anchor element, to download the audio.-->
   <p>Your browser does not support the audio element. Please click <a href='aud/George_Mackay_interview.mp3'>here</a> to download an mp3 of the audio.</p>
 </audio>
       </section>
+      <!--This next section has exactly the same characteristics as the section above, so I don't think is necessary to justify my choices again, since they're the same.-->
       <section class="scast">
         <h1 class="cast">Dean-Charles Chapman</h1>
         <img src="img/Dean_Charles_Chapman.jpg" alt="Dean-Charles Chapman" style="max-width: 100%"/>
@@ -63,9 +71,9 @@ because the browser will pick the first file format that it works with.-->
           Screen Actors Guild Award. In 2018, he played the role of Castor in the AMC series Into the Badland for seven episodes. In 2019, he was cast, alongside
           George MacKay, as one of the two leads in the Sam Mendes-directed war film 1917. The film was critically acclaimed and went on to receive ten Academy Award
           nominations. Subsequently, he played the lead role in the Eoin Macken's drama Here Are the Young Men." </p>
-          <p>Information taken from Dean-Chales Chapman's <a class="ref" href="https://en.wikipedia.org/wiki/Dean-Charles_Chapman">Wikipedia</a> page
+          <p>Information taken from Dean-Chales Chapman's <a class="ref" href="https://en.wikipedia.org/wiki/Dean-Charles_Chapman">Wikipedia</a> page</p><!--Inside the anchor element I used the html
+            attribute to tell the browser where to navigate to, in this case, Dean-Charles Chapman's Wikipedia page-->
           <div class="floatfix"></div>
-<!--tell where the interview,the image and the information is from-->
 <audio controls style="max-width: 100%">
   <source src="aud/Dean-Charles_interview.ogg" type='audio/ogg' />
   <source src="aud/Dean-Charles_interview.mp3" type='audio/mpeg' />
@@ -73,6 +81,7 @@ because the browser will pick the first file format that it works with.-->
   <p>Your browser does not support the audio element. Please click <a href='aud/Dean-Charles_interview.mp3'>here</a> to download an mp3 of the audio.</p>
 </audio>
       </section>
+      <!--All the comments relative to the <footer> element, that is common to both pages, are all in the 'About' page-->
       <footer>
    <p>Website made by Carolina Roques (P2598958)</p>
       </footer>

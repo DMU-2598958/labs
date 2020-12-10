@@ -26,6 +26,7 @@
       <section> <!--The <section> element represents a generic section of a document, in this context is a group of related content.-->
         <h1>Movie Synopsis</h1> <!--Even though I already used an <h1> in this page, as this is inside an <section>, using a <h1> here tells the browser that this is the most
         important heading in this section, but because it's in a <section> it's not as important as the main heading in the <header>-->
+        <!--Used the <p> element to add the synopsis' text, and I put a class so I can customize it in a different way from the other <p> elements-->
         <p class="synopsis">1917 tells the story of two British soldiers, in World War I, tasked with stopping a battalion from walking into a German ambush. </p>
 	<p class="synopsis">On April 6th, 1917, the aerial reconnaissance of the British army noticed that the Germany army was not in retreat but making a strategic withdraw.
   Tom Blake is ordered by General Erinmore to, along with Will Schofield, deliver a message to Colonel Mackenzie of the Second Battalion of the Devonshire
@@ -52,9 +53,12 @@
   Schofield for his efforts. Schofield gives Joseph his brother's rings and dog tag and asks to write to their mother about Blake's heroics, to which Joseph
   agrees. Schofield sits under a tree, looking at photographs of his wife and two daughters.”
 </p>
+<!--Even though I only floated the image, which means the section still has height because of the <p> elements, it is unlikely that all the other text and page will follow the synopsis text.
+But even so, to make sure that doesn't happen and this <p> under this doesn't follow the rest of the text, I added the <div> with an floatfix class, so I can clear the float-->
 <div class="floatfix"></div>
-<p>Synopsis by <a class="ref" href="https://www.imdb.com/title/tt8579674/plotsummary">IMBD</a></p>
-      <div>
+<p>Synopsis by <a class="ref" href="https://www.imdb.com/title/tt8579674/plotsummary">IMDb</a><!--Inside the anchor element I used the html attribute to tell the browser where to navigate to,
+in this case, to the IMDb page--></p>
+      <div> <!--Used this <div> to group the text that presents the movie trailer and the <video> element with the trailer-->
         <p>Here's the movie trailer :</p>
         <!--To insert video in HTML is necessary to use the <video> tag, inside that we need to tell the browser where he can find the video,
         by using the <source> element, this element also tells what type of file it is. It's important to put the three types of video format
@@ -66,11 +70,12 @@
           <source src="vid/1917_trailer.ogv" type='video/ogg' />
           <source src="vid/1917_trailer.webm" type='video/webm' />
           <!--There are some browsers that don't support the <video> element, having that in mind we can provide a
-          little text and a link to download the video.-->
+          little text and a link, with an anchor element, to download the video.-->
           <p>Sorry, it seems that your browser does not support the video element. Please click <a href='vid/.mp4'>here</a> to download an mp4 of the video.</p>
         </video>
       </div>
       </section>
+      <!--An footer it's usually added at the bottom of an article or page with copyright and/or other information. I'm using the footer to tell that I made the website.-->
       <footer>
    <p>Website made by Carolina Roques (P2598958)</p>
       </footer>
