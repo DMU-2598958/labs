@@ -3,13 +3,27 @@ selector{
 property: value;
 poperty: value;
 }
-The selector tells the browser which element is going to receive the styles rules, that are expressed as a list: 'property:value'. Each property needs to be separated with a semi-colon.*/
+The selector tells the browser which element is going to receive the styles rules, that are expressed as a list: 'property:value'. Each property needs to be separated with a semi-colon.
+It is possible to select more then one element, just separate them with an comma:
+selector 1,
+selector 2{
+property: value;
+}
+To select elements with a class use a full stop after the name of the element and write the class name, or just use a full stop and the
+class name to apply the style rules to all the elements in that class:
+selector.class{
+property: value;
+}
+or
+.class{
+property: value;
+}*/
 body{
   font-family: 'Poppins', sans-serif; /*used this CSS rule to add the Poppins font from Google Fonts to all the body's page*/
   color: white; /*The color rule in CSS is used to change the text colours, in this case I changed it to white*/
   background-image:linear-gradient(#2a343d,#3f4b59,#4e505f,#514a52,#835244, #c37142, rgba(253, 166, 73, 0.8)); /*With this rule I'm creating a color gradient for my website's background.
   It's a linear gradient, which means the gradient is going top to bottom (this is the default option). Inside the parentheses we need to add the colours' information for the gradient, the first are
-  Hex color codes, but the last one is RGBA, having the RGB numbers plus an Alpha chanel that specifies the opacity of the colour.*/
+  Hex color codes, but the last one is RGBA, having the RGB numbers plus an Alpha chanel that specifies the opacity of the colour. I based my choice for the colours on the colours used in the movie's posters*/
 }
 header{
   text-align: center; /*to align the header text to the center of the page*/
@@ -18,10 +32,10 @@ header{
   background-image: url("../img/1917_header.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
   In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '1917_header.jpg'*/
   background-repeat: no-repeat; /*I used this property to tell the browser not to repeat the background image*/
-  background-size: 1910px; 
-  background-position: top;
-  background-attachment: fixed;
-  display: block;
+  background-size: 1910px; /*Without using this property the image size would be automatically adjusted to the size of the element it's in. By using this property I'm specifying the size I want for
+  the picture*/
+  background-position: top; /*Places the background image towards the chosen location, in this case, towards the top of the header*/
+  background-attachment: fixed; /*This rule is use to fix the background image to the page, that way, when scrolling up and down in the page, the image isn't going to scroll with it.*/
 }
 section,
 footer{
@@ -29,27 +43,31 @@ footer{
   padding: 10px; /*used the padding rule to increase, by 10 pixels, the spacing between the content and the edge of the element*/
 }
 .scast{
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 5px
+  background-color: rgba(255, 255, 255, 0.05); /*I wanted the cast section to have a slight background colour, so with this rule I chose a colour with the RGBA so I could reduce the opacity*/
+  border-radius: 5px /*The 'border-radius' property is used to round the corners of the elements. I've used it to improve the aesthetic of the website*/
 }
 footer{
-  font-size: 12px;
+  font-size: 12px; /*Used to change the size of the font*/
 }
-.floatfix::after {  /*When an element is floated, its size is no longer used when calculating the size of its parent*/
+.floatfix::after {  /*When an element is floated, its size is no longer used when calculating the size of its parent so if we put more content after one floated element,
+  it will appear on the page wherever it can find space, instead of starting on a new line underneath that element. To fix this issue we need to tell the browser to include
+  the height of the floated elements when calculating the height of their parent. We do that by adding a pseudo-element, used to style specified parts of an element, to the selector.
+  This pseudo-element, '::after', is used to insert some content after the content of an element. After that it's necessary to add some block content with the 'content' and 'display' properties.
+  The last property, 'clear', is the one that clear the floated elements.*/
   content: "";
   display: block;
   clear: both;
 }
 .title{
-  font-size: 45px;
+  font-size: 45px; /*Used to change the size of the font*/
 }
 .cast{
-  text-align: center;
-  font-size: 20px;
+  text-align: center; /*I used this element to align the cast section's title in the center of the page*/
+  font-size: 20px; /*Used to change the size of the font*/
   padding-bottom: 20px; /*used the padding rule to increase, by 20 pixels, the spacing between the content and only the bottom edge of the element*/
 }
 .subtitle{
-  font-size: 20px;
+  font-size: 20px; /*Used to change the size of the font*/
 }
 p.synopsis,
 p.pcast{
@@ -57,30 +75,35 @@ p.pcast{
   text-align: justify; /*used to justify the text*/
 }
 a{
-  color: #51118C;
+  color: #51118C; /*Even though the anchor elements colour, when pressed, is very close to the colour I choose, I didn't fancy the default colour of the links,
+  so I decided to give them a fixed color*/
 }
 .menu{
-  padding-left: 20px;       /*used the padding rule to increase, by 20 pixels, the spacing between the content and the left and right edges of the element*/
+  padding-left: 20px;  /*used the padding rule to increase, by 20 pixels, the spacing between the content and the left and right edges of the element*/
   padding-right: 20px;
 }
 .menu:hover{
-  opacity: 0.6;
+  opacity: 0.6; /*By using the ':hover' pseudo-class with the 'opacity' property, I'm telling the browser to decrease the opacity
+  of the links in the menu when the cursor passes over them. This rule only works in computers, since mobiles and tablets don't have cursor.*/
 }
 .ref{
-  color: white
+  color: white /*Since the link to the external websites is mixed with the text I thought it was better to keep those <a> elements' colour white too.*/
 }
 img{
-    border-radius: 5px;
-    float: left;
-    width: 150px;
-    margin-right:15px;
+    border-radius: 5px; /*The 'border-radius' property is used to round the corners of the elements. I've used it to improve the aesthetic of the website*/
+    float: left; /*According to the layout of the coursework, the cast images need to be seated on the left, with the text on the right.
+    To get this I used the 'float property' that allows elements to seat side-to-side.*/
+    width: 150px; /*This property is was used to establish the width of the image, so that is size was small enough to allow text to flow around it.*/
+    margin-right:15px; /*To add some space between the text and the images, I used both the properties 'margin-right' and 'margin-bottom' to add 15 pixels
+    to the right and bottom margin of the images.*/
     margin-bottom: 15px;
 }
 .img3{
-  border-radius: 5px;
-  width: 200px;
-  float: right;
-  margin:10px;
+  border-radius: 5px; /*The 'border-radius' property is used to round the corners of the elements. I've used it to improve the aesthetic of the website*/
+  width: 200px; /*This property is was used to establish the width of the image, so that is size was small enough to allow text to flow around it.*/
+  float: right; /*I used the 'float property' that allows elements to seat side-to-side to add an image in the middle of the synopsis text, having the text flow around it.*/
+  margin: 10px; /*To add some space between the text and the image, I used the property 'margin' to add 10 pixels
+  to the margins of the image.*/
 }
 video{
   margin: 0 auto;  /*use this CSS settings to center the video element*/
