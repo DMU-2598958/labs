@@ -17,8 +17,8 @@ header{
   margin: -8px; /*so that the header could go all the way to the edges of the webpage I'm setting the margin to -8 pixels to decrease the space between neighbouring elements*/
   background-image: url("../img/1917_header.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
   In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '1917_header.jpg'*/
-  background-repeat: no-repeat; 
-  background-size: 1910px;
+  background-repeat: no-repeat; /*I used this property to tell the browser not to repeat the background image*/
+  background-size: 1910px; 
   background-position: top;
   background-attachment: fixed;
   display: block;
