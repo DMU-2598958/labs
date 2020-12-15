@@ -30,7 +30,7 @@ header{
   padding: 20px; /*used the padding rule to increase, by 20 pixels, the spacing between the content and the edge of the element*/
   margin: -8px; /*so that the header could go all the way to the edges of the webpage I'm setting the margin to -8 pixels to decrease the space between neighbouring elements*/
   background-image: url("../img/1917_header.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
-  In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '1917_header.jpg'*/
+  In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '1917_header.jpg'*/ /*n.d. 1917. [image] Available at:<https://wall.alphacoders.com/big.php?i=1070373&lang=Portuguese&fbclid=IwAR1rSPH5s8_hRpblsJDih6gXQYclQWJM2HLABcQ7zG5OBPz7RVZf8mRClBs> [Accessed 26 November 2020]*/
   background-repeat: no-repeat; /*I used this property to tell the browser not to repeat the background image*/
   background-size: 1910px; /*Without using this property the image size would be automatically adjusted to the size of the element it's in. By using this property I'm specifying the size I want for
   the picture*/
