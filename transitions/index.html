@@ -2,9 +2,58 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Transitions</title>
+    <style>
+    body{
+      margin: 0;
+    }
+    .menu{
+      width: 50px;
+      height: 50px;
+      background-color: #19456b;
+      overflow: hidden;
+    }
+    .menu div{
+      opacity: 0;
+      pointer-events: none;
+    }
+    .out{
+      width: 70vw;
+      height: 100vh;
+      background-color: #19456b;
+      color: #f8f1f1
+    }
+    .out div{
+      opacity: 100;
+    }
+      /*.menu{
+        width: 70vw;
+        height: 100vh;
+        background-color: #19456b;
+        color: #f8f1f1
+      }*/
+    </style>
   </head>
   <body>
-
+    <nav class="menu">
+      <div class="">
+        Something
+      </div>
+      <div class="">
+        Some things
+      </div>
+      <div class="">
+        Some stuff
+      </div>
+    </nav>
+    <script>
+  toggleAnimation = (evt) => {
+    evt.target.classList.toggle("out");
+  };
+  document
+    .querySelector(".menu")
+    .addEventListener("click", toggleAnimation);
+</script>
   </body>
 </html>
