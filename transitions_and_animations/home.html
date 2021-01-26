@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Animations</title>
+    <style>
+      div{
+        background: linear-gradient(14deg, rgba(0,212,255,1) 0%, rgba(9,118,121,1) 47%, rgba(2,0,36,1) 100%);
+        background-size: 400% 400%;
+        animation-name: backgroundcolour;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @@keyframes backgroundcolour {
+        0%{
+          background-position: 0% 50%
+        }
+        50%{
+          background-position: 100% 50%
+        }
+        100%{
+          background-position: 0% 50%
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      This is an animation experience
+    </div>
+  </body>
+</html>
