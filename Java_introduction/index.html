@@ -14,30 +14,34 @@
         background-size: cover;
       }
       img{
-        width: 100px
+        width: 100px;
       }
       #bastard{
         display: inline-block;
+        transition: transform 0.2s
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <a id=bastard href="https://www.washingtonpost.com/graphics/politics/trump-claims/"><img src="images/trump.png" alt="Bastard"></a>
+      <a id="bastard" href="https://www.washingtonpost.com/graphics/politics/trump-claims/">
+        <img src="images/trump.png" alt="Bastard"></a>
     </div>
-    <script type="text/javascript">
+
+
+    <script>
 
     moveBastard = () => {
       console.log("working");
-      let bastard = document.getElementById("bastard");
+      let bastard = document.getElementById('bastard');
 
       let horizontalPosition = Math.random() * (window.innerWidth - 100);
       let verticalPosition = Math.random() * (window.innerHeight - 100);
-      bastard.style.transform = "translate(" + horizontalPosition + "px,)";
-    };
+
+      bastard.style.transform = "translate(" + horizontalPosition + "px, " + verticalPosition +"px)";
+    }
 
     setInterval(moveBastard,500);
-
     </script>
   </body>
 </html>
