@@ -18,21 +18,52 @@
       }
       #bastard{
         display: inline-block;
-        transition: transform 0.2s
+        transition: transform 0.2s;
+      }
+      #timer{
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        font-size: 40px;
+        font-family: serif;
+      }
+      #score{
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        font-size: 40px;
+        font-family: serif;
+      }
+      #gameOverScreen{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #07EBFA;
+        display: none;
+      }
+      #gameOverScreen p{
+        font-size: 200%;
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <a id="bastard" href="https://www.amazon.co.uk/Top-Reasons-Donald-Trump-Sucks/dp/1545138540">
-        <img src="images/trump.png" alt="Bastard"></a>
+      <p id="timer">30s</p>
+      <p id="score">0</p>
+        <img id="bastard" src="images/trump.png" alt="Bastard"></a>
+    </div>
+    <div id="gameOverScreen">
+      <p>Game Over</p>
+      <p id="finalScore"></p>
     </div>
 
 
     <script>
 
     moveBastard = () => {
-      console.log("working");
       let bastard = document.getElementById('bastard');
 
       let horizontalPosition = Math.random() * (window.innerWidth - 100);
@@ -40,8 +71,27 @@
 
       bastard.style.transform = "translate(" + horizontalPosition + "px, " + verticalPosition +"px)";
     }
+      setInterval(moveBastard,1000);
 
-    setInterval(moveBastard,1000);
+      countdown = () => {
+        timer--;
+        document.getElementById('timer') . textContent = timer + 's';
+        if(timer == 0){
+          document.getElementById('gameOverScreen').style.display = 'block';
+          document.getElementById('finalScore').textContent = "You scored " + score + " points";
+        }
+      }
+
+      updateScore = () => {
+        score++;
+        document.getElementById('score').textContent = score;
+      }
+
+      let timer = 30;
+      setInterval(countdown,1000);
+      let score = 0;
+
+      document.getElementById('bastard') . addEventListener('click', updateScore)
     </script>
   </body>
 </html>
