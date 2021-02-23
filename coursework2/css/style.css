@@ -19,7 +19,7 @@ or
 property: value;
 }*/
 header{
-  background-image: image();
+  background-image: url();
 }
 .evora_logo{
   margin: 0 auto;
