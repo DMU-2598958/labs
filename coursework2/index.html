@@ -6,8 +6,22 @@
       the browser to match the website width with the width of the device in which the website is being seen.
       By adding this my page is now mobile friendly.-->
     <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
+      the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
+      the type attribute describes what type of document it is.-->
   </head>
   <body>
+    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page, starting with an article,
+    a self-contained composition-->
+      <header>
+        <!--To add an image to a website we need to use the <img> tag, then,inside that, we need to put two attributes: the source, that tells where
+        the image is, and the alt attribute, that provides a small description of the image to the browser, it's also what the screen reader will read.
+        With the style attribute, I told the browser to limit the width of the image to 100%, so that it can't be any wider than the device it's in.-->
+        <img class="evora_logo" src="img/logo Evora.png" alt="Fridays For Future Evora Logo" style="max-width: 100%">
+        <h1>Fridays For Future</h1>
+        <h3>Evora</h3>
+      </header>
 
+    </article>
   </body>
 </html>
