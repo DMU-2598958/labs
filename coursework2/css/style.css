@@ -18,14 +18,24 @@ or
 .class{
 property: value;
 }*/
+body{
+  font-family: 'Secular One', sans-serif; /*used this CSS rule to add the font from Google Fonts to all the body's page*/
+  background-color: #078544;
+  color: #F6FFFF;
+}
 header{
   text-align: center; /*to align the header text to the center of the page*/
   position: relative;
+  font-size: 25px
 }
 .background{
-  background-image: url("../img/002366500015.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
+  background-image: url("../img/header_background/DSC_0139.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
   In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '...'*/;
-  opacity: 0.5;
+  opacity: 0.8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-attachment: fixed;
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -34,12 +44,13 @@ header{
   margin: -8px; /*so that the header could go all the way to the edges of the webpage I'm setting the margin to -8 pixels to decrease the space between neighbouring elements*/
 }
 .evora_logo{
-  margin: 0 auto;      /*use this CSS settings to center the video element and define it size*/
+  margin: 0 auto;  /*use this CSS settings to center the video element and define it size*/
   display: block;
-  width: 250px;
+  width: 170px;
   padding-top: 40px
 }
-nav.menu {
+
+/*nav.menu {
   margin: 0 auto;
   display: block;
   padding: 120px 0 0 0;
@@ -103,4 +114,4 @@ a:hover {
 
 ul li ul li a {
   transition: all 0.5s ease;
-}
+}*/
