@@ -34,89 +34,73 @@ header{
   margin: -8px; /*so that the header could go all the way to the edges of the webpage I'm setting the margin to -8 pixels to decrease the space between neighbouring elements*/
 }
 .evora_logo{
-  margin: 0 auto;      /*use these CSS settings to centre the video element and define its size*/
+  margin: 0 auto;      /*use this CSS settings to center the video element and define it size*/
   display: block;
   width: 250px;
   padding-top: 40px
 }
-nav {
-  &.primary-navigation {
-    margin: 0 auto;
-    display: block;
-
-    padding: 120px 0 0 0;
-    text-align: center;
-    font-size: 16px;
-
-    ul li {
-      list-style: none;
-      margin: 0 auto;
-      border-left: 2px solid #3ca0e7;
-      display: inline-block;
-      padding: 0 30px;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      font-family: arvo;
-    }
-
-    li a {
-      color: black;
-    }
-
-    li a:hover {
-      color: #3ca0e7;
-    }
-
-    li:hover {
-      cursor: pointer;
-    }
-
-    ul li ul {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-padding-left: 0;
-      left: 0;
-      display: none;
-      background: white;
-    }
-
-    ul li:hover > ul,
-    ul li ul:hover {
-      visibility: visible;
-      opacity: 1;
-      display: block;
-      min-width: 250px;
-      text-align: left;
-      padding-top: 20px;
-      box-shadow: 0px 3px 5px -1px #ccc;
-    }
-
-    ul li ul li {
-      clear: both;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 20px;
-      border-style: none;
-    }
-
-    ul li ul li a:hover {
-      padding-left: 10px;
-      border-left: 2px solid #3ca0e7;
-      transition: all 0.3s ease;
-    }
-  }
+nav.menu {
+  margin: 0 auto;
+  display: block;
+  padding: 120px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+nav.menu ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #70d4af;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+nav.menu li a {
+  color: black;
+}
+nav.menu li a:hover {
+  color: #89ebac;
+}
+nav.menu ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+}
+nav.menu ul li:hover > ul,
+nav.menu ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+nav.menu ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+nav.menu ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #70d4af;
+  transition: all 0.3s ease;
 }
 
 a {
-
-    text-decoration: none;
-
-    &:hover {
-        color: #3CA0E7;
-    }
-
+  text-decoration: none;
+}
+a:hover {
+  color: #89ebac;
 }
 
- ul li ul li a { transition: all 0.5s ease; }
+ul li ul li a {
+  transition: all 0.5s ease;
+}
