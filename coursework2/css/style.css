@@ -56,8 +56,16 @@ header{
   width: 170px;
   padding-top: 40px;
 }
+.burger div{
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
 nav{
   background: #96D69A;
+  text-align: center;
 }
 nav::after{
   content: '';
@@ -65,16 +73,14 @@ nav::after{
   display: table;
 }
 nav ul{
-  float: right;
   list-style: none;
-  margin-right: 40px;
   position: relative;
+  justify-content: space-between;
 }
 nav ul li{
-  float: left;
   display: inline-block;
   background: #96D69A;
-  margin: 0 5px;
+  margin: 0 100px;
 }
 nav ul li a{
   text-decoration: none;
@@ -93,17 +99,46 @@ nav ul li a {
 
 nav ul ul{
   position: absolute;
+  top: 80px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+  border-top: 3px solid white;
+}
+nav ul li:hover > ul{
   top: 70px;
-  display: none;
+  opacity: 1;
+  visibility: visible;
 }
 nav ul ul li{
   position: relative;
   margin: 0px;
-  width: 150px;
+  width: 200px;
   float: none;
   display: list-item;
-  border-bottom: 1px solid #078544
+  border-bottom: 1px solid white;
+  text-align: left;
 }
+/*
+@media all and (max-width: 976px) {
+  nav ul{
+    margin-left: 0px;
+    float: right;
+  }
+  nav ul li, nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul ul{
+    top: 70px;
+    position: static;
+    border-top: none;
+    float:none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+}*/
 /*nav.menu {
   margin: 0 auto;
   display: block;
