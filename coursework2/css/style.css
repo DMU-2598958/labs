@@ -54,29 +54,56 @@ header{
   margin: 0 auto;  /*use this CSS settings to center the video element and define it size*/
   display: block;
   width: 170px;
-  padding-top: 40px
+  padding-top: 40px;
 }
 nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
+  background: #96D69A;
 }
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
+nav::after{
+  content: '';
+  clear: both;
+  display: table;
 }
-.nav-links li{
+nav ul{
+  float: right;
   list-style: none;
+  margin-right: 40px;
+  position: relative;
 }
-.nav-links a{
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #96D69A;
+  margin: 0 5px;
+}
+nav ul li a{
   text-decoration: none;
-  font-weight: bold;
   color: #F6FFFF;
-  text-align: center;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover {
+  color: #89ebac;
 }
 
+nav ul li a {
+  transition: all 0.5s ease;
+}
+
+nav ul ul{
+  position: absolute;
+  top: 70px;
+  display: none;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #078544
+}
 /*nav.menu {
   margin: 0 auto;
   display: block;
