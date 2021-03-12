@@ -9,7 +9,6 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
       the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
       the type attribute describes what type of document it is.-->
-    <script src="java/script.js"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
   </head>
@@ -32,11 +31,12 @@
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-      <nav>
+      <nav id="menu" style="right: -100%">
         <ul class="navbar">
           <li><a href="#">Contact</a></li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Strikes and Actions</a>
+          <li>
+            <a href="#">Strikes and Actions</a>
             <ul class="dropdown">
               <li><a href="#">15.03.2019</a></li>
               <li><a href="#">24.05.2019</a></li>
@@ -48,6 +48,10 @@
           </li>
         </ul>
       </nav>
+      <div id="cover" style="right: -100%">
+
+      </div>
     </article>
+    <script src="java/app.js"></script>
   </body>
 </html>
