@@ -127,6 +127,7 @@ nav ul ul li{
   display: none;
 }
 
+
 @media screen and (max-width: 976px) {
   .burger{
     display: block;
@@ -139,7 +140,7 @@ nav ul ul li{
     position: fixed;
     top: 0;
     z-index: 10;
-
+    transition: right 0.5s ease-in;
   }
   .navbar a{
     text-align: center;

@@ -8,5 +8,5 @@ closeMenu = () => {
   document.getElementById("cover").style.right = '-100%';
 }
 
-  document.getElementsByClassName("burger").addEventListener("click",openMenu);
+  document.getElementById("burger").addEventListener("click",openMenu);
   document.getElementById("cover").addEventListener("click",closeMenu);
