@@ -118,7 +118,11 @@ nav ul li ul li a{
   background-color: #243C52;
   opacity: 0.7;
 }
-
+.WWD{
+  text-align: center;
+  padding: 40px;
+  font-size: 25px
+}
 
 @media screen and (min-width: 976px) and (min-height: 788px) {
 
@@ -128,61 +132,64 @@ nav ul li ul li a{
   #cover{
     display: none;
   }
-nav{
-  right: inherit;
-  display: inline-block;
-  height: auto;
-  width: 100%;
-  top: inherit;
-  position: absolute;
-  text-align: center;
-}
-  .navbar{
-    width: auto;
+  nav{
+    right: inherit;
+    display: inline-block;
     height: auto;
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #F6FFFF;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 70px;
-    border-bottom: none;
-    padding-bottom: none;
-}
-  nav ul ul{
+    width: 100%;
+    top: inherit;
     position: absolute;
-    top: 80px;
-    transition: top .3s;
-    border-top: 3px solid white;
-    padding: inherit;
-    opacity: 0;
-    visibility: hidden;
-}
-  nav ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-  nav ul li ul li a{
-    line-height: none;
-    font-size: 18px;
-    font-weight: normal;
-    padding-left: 20px
+    text-align: center;
   }
-  nav ul ul li{
-    position: relative;
-    margin: 0px;
-    width: 170px;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid white;
-    text-align: left;
-    background: #96D69A;
+    .navbar{
+      width: auto;
+      height: auto;
+      padding: 0px;
+      margin: 0px;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
   }
+  nav ul li a{
+      text-decoration: none;
+      color: #F6FFFF;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 70px;
+      border-bottom: none;
+      padding-bottom: none;
+  }
+    nav ul ul{
+      position: absolute;
+      top: 80px;
+      transition: top .3s;
+      border-top: 3px solid white;
+      padding: inherit;
+      opacity: 0;
+      visibility: hidden;
+  }
+    nav ul li:hover > ul{
+      top: 70px;
+      opacity: 1;
+      visibility: visible;
+  }
+    nav ul li ul li a{
+      line-height: none;
+      font-size: 18px;
+      font-weight: normal;
+      padding-left: 20px
+    }
+    nav ul ul li{
+      position: relative;
+      margin: 0px;
+      width: 170px;
+      float: none;
+      display: list-item;
+      border-bottom: 1px solid white;
+      text-align: left;
+      background: #96D69A;
+    }
+    section{
+      position: static;
+    }
 }
