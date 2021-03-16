@@ -115,6 +115,8 @@ nav ul li ul li a{
   height: 100vh;
   width: 100vw;
   right: -100%;
+  background-color: #243C52;
+  opacity: 0.7;
 }
 
 
@@ -124,9 +126,33 @@ nav ul li ul li a{
   .burger{
     display: none;
   }
-  nav{
+  #cover{
+    display: none;
+  }
+nav{
+  right: inherit;
+  display: inline-block;
+  height: 7vh;
+  width: 100vw;
+  top: inherit;
+  text-align: center;
+}
+
+/*  nav ul li a{
+    text-decoration: none;
+    color: #F6FFFF;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 100px;
+    border-bottom: 4px solid cyan;
+    padding-bottom: 3px;*/
+/*  nav{
     background: #96D69A;
     text-align: center;
+    right: 0%;
+    height: initial;
+    width: initial;
+    position: absolute;
   }
   nav ul{
     list-style: none;
@@ -175,5 +201,5 @@ nav ul li ul li a{
   }
   .show,input{
     display: none;
-  }
+  }*/
 }
