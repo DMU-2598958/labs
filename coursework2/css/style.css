@@ -56,6 +56,13 @@ header{
   width: 170px;
   padding-top: 40px;
 }
+.burger{
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
 .burger div{
   width: 25px;
   height: 4px;
@@ -63,95 +70,110 @@ header{
   margin: 5px;
   border-radius: 5px;
 }
-.burger{
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: none;
-}
 nav{
-  background: #96D69A;
-  text-align: center;
+  background-color: #96D69A;
+  height: 100vh;
+  width: 90vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: right 0.5s ease-in;
+  right: -100%;
 }
-nav::after{
-  content: '';
-  clear: both;
-  display: table;
+.navbar{
+  height: 100vh;
+  width: 70vw;
 }
-nav ul{
-  list-style: none;
-  position: relative;
-  justify-content: space-between;
-}
-nav ul li{
-  display: inline-block;
-  background: #96D69A;
-  margin: 0 100px;
-}
-nav ul li a{
-  text-decoration: none;
-  color: #F6FFFF;
-  line-height: 70px;
-  font-size: 18px;
-  padding: 8px 15px;
+  nav ul{
+    list-style: none;
+    position: relative;
+    text-align: left;
+    padding-left: 40px;
+    justify-content: space-around;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #F6FFFF;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 100px;
+    border-bottom: 4px solid cyan;
+    padding-bottom: 3px;
 }
 nav ul li a:hover {
   color: #89ebac;
 }
-nav ul li a {
-  transition: all 0.5s ease;
+nav ul li ul li a{
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: none;
 }
-nav ul ul{
-  position: absolute;
-  top: 80px;
-  opacity: 0;
-  visibility: hidden;
-  transition: top .3s;
-  border-top: 3px solid white;
-}
-nav ul li:hover > ul{
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-}
-nav ul ul li{
-  position: relative;
-  margin: 0px;
-  width: 200px;
-  float: none;
-  display: list-item;
-  border-bottom: 1px solid white;
-  text-align: left;
-}
-.show,input{
-  display: none;
+#cover{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  right: -100%;
 }
 
 
-@media screen and (max-width: 976px) {
+
+@media screen and (min-width: 976px) {
+
   .burger{
-    display: block;
-    cursor: pointer;
-}
+    display: none;
+  }
   nav{
-    background-color: #96D69A;
-    height: 100vh;
-    width: 70vw;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    transition: right 0.5s ease-in;
-  }
-  .navbar a{
+    background: #96D69A;
     text-align: center;
-    padding: 20px;
-    display: block;
   }
-  #cover{
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    right: -100%;
+  nav ul{
+    list-style: none;
+    position: relative;
+    justify-content: space-between;
+  }
+  nav ul li{
+    display: inline-block;
+    background: #96D69A;
+    margin: 0 100px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #F6FFFF;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+  nav ul li a:hover {
+    color: #89ebac;
+  }
+  nav ul li a {
+    transition: all 0.5s ease;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    border-top: 3px solid white;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid white;
+    text-align: left;
+  }
+  .show,input{
+    display: none;
   }
 }
