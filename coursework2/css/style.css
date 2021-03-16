@@ -74,7 +74,7 @@ header{
   border-radius: 5px;
 }
 nav{
-  background-color: #96D69A;
+  background-color: #078544;
   height: 100vh;
   width: 90vw;
   position: fixed;
@@ -100,7 +100,7 @@ nav{
     font-size: 30px;
     font-weight: bold;
     line-height: 100px;
-    border-bottom: 4px solid cyan;
+    border-bottom: 4px solid #37BFAF;
     padding-bottom: 3px;
 }
 nav ul li a:hover {
@@ -123,14 +123,54 @@ nav ul li ul li a{
 }
 .WWD{
   text-align: center;
-  padding: 40px;
-  font-size: 30px
+  padding-top: 70px;
+  padding-bottom: 40px;
+  font-size: 40px
 }
 .WWDp{
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.WWDp2{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 17px;
+  padding-bottom: 40px;
+}
+.mphoto{
+  height: 400px;
+  position: relative;
+  clip-path: polygon(0 12%,0 100%,100% 88%,100% 0);
+  max-width: 100%;
+}
+.mphoto::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../img/DSC_0017.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+#mtext{
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  justify-content: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @media screen and (min-width: 976px) and (min-height: 788px) {
@@ -149,6 +189,7 @@ nav ul li ul li a{
     top: inherit;
     position: absolute;
     text-align: center;
+    background-color: #37BFAF;
   }
     .navbar{
       width: auto;
@@ -196,9 +237,12 @@ nav ul li ul li a{
       display: list-item;
       border-bottom: 1px solid white;
       text-align: left;
-      background: #96D69A;
+      background: #37BFAF;
     }
     section{
-      position: static;
+      padding-top: 100px;
+    }
+    .WWD{
+
     }
 }
