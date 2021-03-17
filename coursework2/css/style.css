@@ -200,7 +200,7 @@ nav ul li ul li a{
 }
 #earth{
   width: 399.09px;
-  height: 407.69;
+  height: 407.69px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -208,16 +208,20 @@ nav ul li ul li a{
 #innertext{
   width: 543.5px;
   height: 242.2px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 #outtertext{
   width: 738.4px;
   height: 316.7px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
   opacity: 0.5;
 }
 
