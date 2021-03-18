@@ -191,7 +191,6 @@ nav ul li ul li a{
   padding-left: 30px;
   padding-right: 30px;
   font-size: 18px;
-  padding-bottom: 20px;
   line-height: 30px;
 }
 .OHp a{
@@ -201,6 +200,7 @@ nav ul li ul li a{
 #earth{
   width: 601.52px;
   height: 601.83px;
+  max-width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -208,6 +208,7 @@ nav ul li ul li a{
 #innertext{
   width: 601.52px;
   height: 601.83px;
+  max-width: 90%;
   position: absolute;
   margin: auto;
   left: 0;
@@ -219,6 +220,7 @@ nav ul li ul li a{
 #outertext{
   width: 601.52px;
   height: 601.83px;
+  max-width: 90%;
   position: absolute;
   margin: auto;
   left: 0;
