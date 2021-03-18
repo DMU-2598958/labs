@@ -236,6 +236,25 @@ nav ul li ul li a{
   line-height: 30px;
   padding-bottom: 20px;
 }
+.countdown{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 40px;
+}
+b{
+  font-size: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+em{
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.countdowntext{
+  text-align: center;
+  font-weight: 500;
+}
 footer{
   background-color: #081B29;
   font-size: 12px;
