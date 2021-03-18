@@ -228,6 +228,14 @@ nav ul li ul li a{
   z-index: 1;
   animation: rotate1 20s linear infinite;
 }
+.OHp2{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
 footer{
   background-color: #081B29;
   font-size: 12px;
@@ -321,6 +329,13 @@ footer{
       padding-left: 250px;
       padding-right: 250px;
       line-height: 30px;
-      padding-bottom: 100px;
+      padding-bottom: 30px;
+    }
+    .OHp2{
+      padding-left: 250px;
+      padding-right: 250px;
+      line-height: 30px;
+      padding-top: 30px;
+      padding-bottom: 40px;
     }
 }
