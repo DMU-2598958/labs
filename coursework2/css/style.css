@@ -199,24 +199,39 @@ nav ul li ul li a{
   font-weight: bold;
 }
 #earth{
-  width: 505.57px;
-  height: 504.96px;
+  width: 601.52px;
+  height: 601.83px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 #innertext{
-  width: 505.57px;
-  height: 504.96px;
+  width: 601.52px;
+  height: 601.83px;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
   z-index: 1;
+  opacity: 0.5;
   animation: rotate 20s linear infinite;
+}
+#outertext{
+  width: 601.52px;
+  height: 601.83px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: rotate1 20s linear infinite;
 }
 footer{
   background-color: #081B29;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
