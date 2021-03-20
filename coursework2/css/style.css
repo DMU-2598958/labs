@@ -255,6 +255,12 @@ em{
   font-weight: 500;
   font-size: 25px;
 }
+.OSMF{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 30px;
+}
 .countdowntext{
   text-align: center;
   font-weight: 500;
@@ -263,8 +269,39 @@ footer{
   background-color: #081B29;
   font-size: 12px;
   width: 100%;
-  height: 100%;
   padding: 10px;
+  position: static;
+}
+.FUOSM{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+.socialmedia{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.twitter{
+  width: 30px;
+  height: 30px;
+}
+.facebook{
+  width: 30px;
+  height: 30px;
+}
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+.youtube{
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
@@ -360,5 +397,41 @@ footer{
       line-height: 30px;
       padding-top: 30px;
       padding-bottom: 40px;
+    }
+    .socialmedia{
+      justify-content: center;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .twitter{
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    .twitter:hover{
+      opacity: 0.5;
+    }
+    .facebook{
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    .facebook:hover{
+      opacity: 0.5;
+    }
+    .instagram{
+      width: 30px;
+      height: 30px;
+      margin-right: 25px;
+    }
+    .instagram:hover{
+      opacity: 0.5;
+    }
+    .youtube{
+      width: 30px;
+      height: 30px;
+    }
+    .youtube:hover{
+      opacity: 0.5;
     }
 }
