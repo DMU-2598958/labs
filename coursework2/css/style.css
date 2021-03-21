@@ -317,6 +317,10 @@ em{
 .h1{
   padding: 25px;
 }
+.PS a{
+  text-decoration: none;
+  color: #F6FFFF;
+}
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
