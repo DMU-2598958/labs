@@ -81,19 +81,7 @@ footer{
   margin-right: 50px;
   margin-bottom: 20px;
 }
-.twitter{
-  width: 30px;
-  height: 30px;
-}
-.facebook{
-  width: 30px;
-  height: 30px;
-}
-.instagram{
-  width: 30px;
-  height: 30px;
-}
-.youtube{
+.twitter, .facebook, .instagram, .youtube{
   width: 30px;
   height: 30px;
 }
@@ -309,6 +297,9 @@ em{
   color: #F6FFFF;
   border-bottom: 4px solid #37BFAF;
 }
+.PS img{
+  max-width: 100%;
+}
 #PSh{
   margin-left: auto;
   margin-right: auto;
@@ -316,10 +307,7 @@ em{
   font-size: 28px;
   margin-bottom: 30px;
 }
-#img1{
-  max-width: 100%;
-}
-.h1{
+.h1, .h2{
   padding: 25px;
 }
 .p1{
@@ -431,35 +419,12 @@ em{
       margin-left: 0px;
       margin-right: 0px;
     }
-    .twitter{
+    .twitter, .facebook, .instagram, .youtube{
       width: 30px;
       height: 30px;
       margin-right: 20px;
     }
-    .twitter:hover{
-      opacity: 0.5;
-    }
-    .facebook{
-      width: 30px;
-      height: 30px;
-      margin-right: 20px;
-    }
-    .facebook:hover{
-      opacity: 0.5;
-    }
-    .instagram{
-      width: 30px;
-      height: 30px;
-      margin-right: 25px;
-    }
-    .instagram:hover{
-      opacity: 0.5;
-    }
-    .youtube{
-      width: 30px;
-      height: 30px;
-    }
-    .youtube:hover{
+    .twitter:hover, .facebook:hover, .instagram:hover, .youtube:hover{
       opacity: 0.5;
     }
     .PS a{
