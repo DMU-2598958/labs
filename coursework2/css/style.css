@@ -427,10 +427,29 @@ em{
     .twitter:hover, .facebook:hover, .instagram:hover, .youtube:hover{
       opacity: 0.5;
     }
+    .PS{
+      margin-left: 450px;
+      margin-right: 450px;
+    }
     .PS a{
       border-bottom: none;
     }
     .PS a:hover{
       border-bottom: 4px solid #37BFAF
+    }
+    #PSh{
+      padding-left: 50px;
+    }
+    .first, .second, .third, .fourth{
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .second, .fourth{
+      flex-direction: row-reverse;
+    }
+    .PS img{
+      width: 50%;
+      height: auto;
     }
 }
