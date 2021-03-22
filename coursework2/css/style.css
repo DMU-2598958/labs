@@ -313,6 +313,32 @@ em{
 .p1{
   margin-top: 20px;
 }
+.buttondiv{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.button {
+  border: none;
+  padding: 32px 32px;
+  display: inline-block;
+  color: #F6FFFF;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 2px 2px 5px #081B29;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 4px;
+  width: 50%;
+  position: relative;
+  background-image: url("../img/strikes_and_actions/of_03.2019/IMG_1335.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
@@ -422,7 +448,7 @@ em{
     .twitter, .facebook, .instagram, .youtube{
       width: 30px;
       height: 30px;
-      margin-right: 20px;
+      margin-right: 30px;
     }
     .twitter:hover, .facebook:hover, .instagram:hover, .youtube:hover{
       opacity: 0.5;
@@ -451,5 +477,19 @@ em{
     .PS img{
       width: 50%;
       height: auto;
+    }
+    .buttondiv{
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+    .button{
+      box-shadow: none;
+      width: 30%;
+      font-size: 25px;
+      letter-spacing: 3px;
+      word-spacing: 20px;
+    }
+    .button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 }
