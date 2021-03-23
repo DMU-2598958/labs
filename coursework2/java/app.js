@@ -24,3 +24,21 @@ closeMenu = () => {
     document.getElementById('minuten').innerHTML = minutes;
     document.getElementById('secondsn').innerHTML = seconds;
   }, 1000);
+
+function openModal() {
+  document.getElementById("Modal25").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("Modal25").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  showSlides (slideIndex = n)
+}
