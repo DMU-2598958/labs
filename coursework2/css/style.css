@@ -338,7 +338,25 @@ em{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.h125{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+.p25{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.p25 a{
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 4px solid #37BFAF;
+}
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
@@ -491,5 +509,17 @@ em{
     }
     .button:hover {
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .p25{
+      padding-left: 250px;
+      padding-right: 250px;
+      line-height: 30px;
+      padding-bottom: 30px;
+    }
+    .p25 a{
+        border-bottom: none;
+    }
+    .p25 a:hover{
+      border-bottom: 4px solid #37BFAF
     }
 }

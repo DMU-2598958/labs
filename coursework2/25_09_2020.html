@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/> <!--I used the <meta> tag to describe information about the page, in this case I'm telling
+      the browser to match the website width with the width of the device in which the website is being seen.
+      By adding this my page is now mobile friendly.-->
+    <title>Fridays For Future Evora</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
+      the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
+      the type attribute describes what type of document it is.-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
+  </head>
+  <body>
+<article class="">
+  <header>
+    <div class="background"></div>
+    <!--To add an image to a website we need to use the <img> tag, then,inside that, we need to put two attributes: the source, that tells where
+    the image is, and the alt attribute, that provides a small description of the image to the browser, it's also what the screen reader will read.
+    With the style attribute, I told the browser to limit the width of the image to 100%, so that it can't be any wider than the device it's in.-->
+    <a href="index.html">
+    <img class="evora_logo" src="img/logo Evora.png" alt="Fridays For Future Evora Logo" style="max-width: 100%">
+    </a>
+    <h1 class="title">Fridays For Future</h1>
+    <h2 class="subtitle">Evora</h2>
+  </header>
+  <div class="burger" id="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <nav id="menu">
+    <ul class="navbar">
+      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="strikes&actions.html">Strikes and Actions</a>
+        <ul class="dropdown">
+          <li><a href="#">15.03.2019</a></li>
+          <li><a href="#">24.05.2019</a></li>
+          <li><a href="#">27.09.2019</a></li>
+          <li><a href="25_09_2020.html">25.09.2020</a></li>
+          <li><a href="#">Other actions</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="cover"></div>
+  <section>
+    <h1 class="h125">25.09.2020</h1>
+    <p class="p25">Due to the Covid-19 pandemic, instead of the usually strike, we decided to change the Praça do
+      Geraldo gathering to an Instagram Live, called <a href="https://www.instagram.com/tv/CFkFzCGlkd6/?utm_source=ig_web_copy_link">"Live for the Climate"</a>, in which we read the national claims and talked about other municipal problems.<br>
+      Near the Roman Temple were only members of the nucleus with banners. We invited people to participate by leaving only their signs on the spot.</p>
+
+  </section>
+  <footer>
+    <h2 class="FUOSM">FOLLOW US ON SOCIAL MEDIA</h2>
+    <div class="socialmedia">
+    <a href="https://twitter.com/FFFPortugal?s=20"><img class="twitter" src="img/icons/twitter.png" alt="Twitter Icon"></a>
+    <a href="https://www.facebook.com/greveclimaticaestudantil"><img class="facebook" src="img/icons/facebook.png" alt="Facebook Icon"></a>
+    <a href="https://instagram.com/greveclimaticaevora?igshid=xxq0s5a8zsg6"><img class="instagram" src="img/icons/instagram.png" alt="Instagram Icon"></a>
+    <a href="https://www.youtube.com/channel/UChb23_19GTIWDF7-zXNrT3g"><img class="youtube" src="img/icons/youtube.png" alt="Twitter Icon"></a>
+    </div>
+    <p>Website made by Carolina Roques (P2598958)</p>
+  </footer>
+</article>
+<script src="java/app.js"></script>
+  </body>
+</html>
