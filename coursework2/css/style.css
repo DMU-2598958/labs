@@ -223,6 +223,10 @@ nav ul li ul li a{
   color: #37BFAF;
   font-weight: bold;
 }
+.rotation{
+  position: relative;
+  overflow: hidden;
+}
 #earth{
   width: 601.52px;
   height: 601.83px;
