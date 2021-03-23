@@ -373,7 +373,7 @@ em{
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
 
 
-@media screen and (min-width: 976px) and (min-height: 788px) {
+@media screen and (min-width: 976px) and (min-height: 650px) {
 
   .burger{
     display: none;
