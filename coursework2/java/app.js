@@ -26,10 +26,10 @@ closeMenu = () => {
   }, 1000);
 
 function openModal() {
-  document.getElementById("Modal25").style.display = "block";
+  document.getElementById("Modal").style.display = "block";
 }
 function closeModal() {
-  document.getElementById("Modal25").style.display = "none";
+  document.getElementById("Modal").style.display = "none";
 }
 
 var slideIndex = 1;
