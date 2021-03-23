@@ -395,8 +395,7 @@ em{
 .modal25{
   display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
+  z-index: 11;
   left: 0;
   top: 0;
   width: 100%;
@@ -406,11 +405,11 @@ em{
 }
 .modal-content{
   position: relative;
-  background-color: #fefefe;
   margin: auto;
-  padding: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 90%;
-  max-width: 1200px;
 }
 .close{
   color: white;
@@ -455,11 +454,12 @@ em{
 }
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
+
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
@@ -630,5 +630,8 @@ em{
       margin-top: 30px;
       margin-bottom: 30px;
       margin-right: 20%;
+    }
+    .modal-content{
+      width: 70%;
     }
 }
