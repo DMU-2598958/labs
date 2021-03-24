@@ -463,6 +463,8 @@ em{
 }
 .gallery27{
   display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .column271{
   width: 25%;
@@ -480,6 +482,13 @@ em{
   display: flex;
   flex-direction: column;
   cursor: pointer;
+}
+.route27 h2{
+  padding: 20px;
+}
+iframe{
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
