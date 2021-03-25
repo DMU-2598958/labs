@@ -484,11 +484,17 @@ em{
   cursor: pointer;
 }
 .route27 h2{
-  padding: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: #37BFAF;
+  letter-spacing: 2px;
 }
 iframe{
   max-width: 100%;
-  height: auto;
+  border: none;
 }
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
@@ -664,5 +670,17 @@ iframe{
     }
     .modal-content{
       width: 70%;
+    }
+    .route27 h2{
+      padding-top: 20px;
+      padding-bottom: 50px;
+      font-size: 50px;
+      text-align: center;
+    }
+    iframe{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
     }
 }
