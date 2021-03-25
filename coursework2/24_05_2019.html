@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/> <!--I used the <meta> tag to describe information about the page, in this case I'm telling
+      the browser to match the website width with the width of the device in which the website is being seen.
+      By adding this my page is now mobile friendly.-->
+      <title>Fridays For Future Evora</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
+        the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
+        the type attribute describes what type of document it is.-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
+  </head>
+  <body>
+    <article class="">
+      <header>
+        <div class="background"></div>
+        <!--To add an image to a website we need to use the <img> tag, then,inside that, we need to put two attributes: the source, that tells where
+        the image is, and the alt attribute, that provides a small description of the image to the browser, it's also what the screen reader will read.
+        With the style attribute, I told the browser to limit the width of the image to 100%, so that it can't be any wider than the device it's in.-->
+        <a href="index.html">
+        <img class="evora_logo" src="img/logo Evora.png" alt="Fridays For Future Evora Logo" style="max-width: 100%">
+        </a>
+        <h1 class="title">Fridays For Future</h1>
+        <h2 class="subtitle">Evora</h2>
+      </header>
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <nav id="menu">
+        <ul class="navbar">
+          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="strikes&actions.html">Strikes and Actions</a>
+            <ul class="dropdown">
+              <li><a href="#">15.03.2019</a></li>
+              <li><a href="24_05_2019.html">24.05.2019</a></li>
+              <li><a href="27_09_2019.html">27.09.2019</a></li>
+              <li><a href="25_09_2020.html">25.09.2020</a></li>
+              <li><a href="#">Other actions</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div id="cover"></div>
+
+
+      <div id="Modal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="slides">
+            <div class="numbertext">1/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0003.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">2/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0023.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">3/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0031.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">4/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0039.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">5/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0046.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">6/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0064.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">7/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0072.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">8/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0076.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">9/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0088.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">10/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0098.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">11/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0108.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">12/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0137.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">13/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0139.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">14/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0149.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">15/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0165.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">16/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0205.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">17/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0238.jpg" style="width:100%">
+          </div>
+          <div class="slides">
+            <div class="numbertext">18/21</div>
+            <img src="img/strikes_and_actions/24.05.2019/DSC_0343.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        </div>
+      <footer>
+        <h2 class="FUOSM">FOLLOW US ON SOCIAL MEDIA</h2>
+        <div class="socialmedia">
+        <a href="https://twitter.com/FFFPortugal?s=20"><img class="twitter" src="img/icons/twitter.png" alt="Twitter Icon"></a>
+        <a href="https://www.facebook.com/greveclimaticaestudantil"><img class="facebook" src="img/icons/facebook.png" alt="Facebook Icon"></a>
+        <a href="https://instagram.com/greveclimaticaevora?igshid=xxq0s5a8zsg6"><img class="instagram" src="img/icons/instagram.png" alt="Instagram Icon"></a>
+        <a href="https://www.youtube.com/channel/UChb23_19GTIWDF7-zXNrT3g"><img class="youtube" src="img/icons/youtube.png" alt="Twitter Icon"></a>
+        </div>
+        <p>Website made by Carolina Roques (P2598958)</p>
+      </footer>
+      <script src="java/app.js"></script>
+    </article>
+  </body>
+</html>
