@@ -343,14 +343,16 @@ em{
   background-repeat: no-repeat;
 }
 .h125,
-.h127{
+.h127,
+.h124{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 40px;
   font-size: 30px;
 }
 .p25,
-.p27{
+.p27,
+.p24{
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
@@ -650,7 +652,8 @@ iframe{
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
     .p25,
-    .p27{
+    .p27,
+    .p24{
       padding-left: 250px;
       padding-right: 250px;
       line-height: 30px;
