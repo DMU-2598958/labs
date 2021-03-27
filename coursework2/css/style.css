@@ -489,7 +489,8 @@ em{
   cursor: pointer;
 }
 .route27 h2,
-.route24 h2{
+.route24 h2,
+.route15 h2{
   text-align: center;
   padding-top: 10px;
   padding-bottom: 40px;
@@ -719,10 +720,11 @@ iframe{
       margin-right: 20%;
     }
     .modal-content{
-      width: 70%;
+      width: 65%;
     }
     .route27 h2,
-    .route24 h2{
+    .route24 h2,
+    .route15 h2{
       padding-top: 20px;
       padding-bottom: 50px;
       font-size: 50px;
