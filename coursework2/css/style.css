@@ -295,6 +295,7 @@ em{
 .PS{
   margin-left: 25px;
   margin-right: 25px;
+  margin-top: 50px;
 }
 .PS a{
   text-decoration: none;
@@ -351,9 +352,11 @@ em{
   margin-bottom: 40px;
   font-size: 30px;
 }
+.SaA,
 .p25,
 .p27,
-.p24{
+.p24,
+.p15{
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
@@ -504,7 +507,8 @@ iframe{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.gallery24 img{
+.gallery24 img,
+.gallery15 img{
   cursor: pointer;
 }
 .column24{
@@ -518,6 +522,26 @@ iframe{
   width: 75%;
   flex-direction: column;
   max-width: 100%;
+}
+.gallery15{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.row15{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.row15 img{
+  width: 33.33%;
+}
+.column15{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.column15 img{
+  width: 25%;
 }
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
@@ -672,9 +696,11 @@ iframe{
     .button:hover {
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+    .SaA,
     .p25,
     .p27,
-    .p24{
+    .p24,
+    .p15{
       padding-left: 250px;
       padding-right: 250px;
       line-height: 30px;
