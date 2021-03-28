@@ -346,7 +346,8 @@ em{
 .h125,
 .h127,
 .h124,
-.h115{
+.h115,
+.h1OA{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -543,6 +544,11 @@ iframe{
 }
 .column15 img{
   width: 25%;
+}
+.BAW{
+  margin-left: 10%;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
