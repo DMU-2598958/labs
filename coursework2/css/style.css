@@ -511,7 +511,8 @@ iframe{
 }
 .gallery24 img,
 .gallery15 img,
-.galleryoa img{
+.galleryoa img,
+.galleryoa2 img{
   cursor: pointer;
 }
 .column24{
