@@ -53,3 +53,12 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+submittedForm = () => {
+  document.getElementById("status").style.display = 'block';
+}
+nonSubmitted = () => {
+  document.getElementById("status").style.right = 'none';
+}
+
+document.getElementById("submitbutton").addEventListener("click",submittedForm);
