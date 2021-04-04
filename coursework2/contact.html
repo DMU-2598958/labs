@@ -51,7 +51,7 @@
       <section class="contact">
         <p class="contactp">Do you have any ideas or suggestions? <br> We would be happy to hear from you! <br> Send us a message!</p>
         <div class="containerform">
-          <form class="" id="contactform">
+          <form onsubmit="return preventSub()" class="" id="contactform">
 
             <label for="Fname">Name</label>
             <input type="text" id="Fname "name="firstname" placeholder="Your name...">
@@ -62,7 +62,7 @@
             <label for="Message">Message</label>
             <textarea id="Message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
 
-            <button id="submitbutton" type="submit">Submit</button>
+            <input id="submitbutton" type="submit" value="Submit">
           </form>
         </div>
         <div id="status">Thank you for your messsage</div>

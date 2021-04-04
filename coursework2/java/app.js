@@ -54,8 +54,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-submittedForm = (evt) => {
-  evt.preventDefault();
+function preventSub () {
+  return false;
+}
+
+submittedForm = () => {
   document.getElementById("status").style.display = 'block';
 }
 

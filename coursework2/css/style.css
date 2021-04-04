@@ -608,7 +608,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-#submitbutton{
+input[type=submit]{
   background-color: #078544;
   color: #F6FFFF;
   padding: 12px 20px;
