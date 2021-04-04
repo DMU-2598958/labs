@@ -625,6 +625,14 @@ input[type=text], select, textarea {
   transition: all 0.5s ease;
   display: none;
 }
+.contactp{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 30px;
+}
 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
@@ -782,7 +790,7 @@ input[type=text], select, textarea {
     .p25,
     .p27,
     .p24,
-    .p15{
+    .p15,{
       padding-left: 250px;
       padding-right: 250px;
       line-height: 30px;
@@ -827,5 +835,11 @@ input[type=text], select, textarea {
     }
     input[type=submit]:hover {
       background-color: #009C77;
+    }
+    .contactp{
+      padding-top: 40px;
+      padding-left: 250px;
+      padding-right: 250px;
+      line-height: 30px;
     }
 }
