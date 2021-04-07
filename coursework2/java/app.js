@@ -53,13 +53,3 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
-
-function preventSub () {
-  return false;
-}
-
-submittedForm = () => {
-  document.getElementById("status").style.display = 'block';
-}
-
-document.getElementById("submitbutton").addEventListener("click",submittedForm);

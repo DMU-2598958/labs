@@ -51,7 +51,7 @@
       <section class="contact">
         <p class="contactp">Do you have any ideas or suggestions? <br> We would be happy to hear from you! <br> Send us a message!</p>
         <div class="containerform">
-          <form onsubmit="return preventSub()" class="" id="contactform">
+          <form class="" id="contactform">
 
             <label for="Fname">Name</label>
             <input type="text" id="Fname "name="firstname" placeholder="Your name...">
@@ -78,6 +78,15 @@
         <p>Website made by Carolina Roques (P2598958)</p>
       </footer>
     </article>
-    <script src="java/app.js"></script>
+    <script>
+
+    submittedForm = (evt) => {
+      evt.preventDefault();
+      document.getElementById("status").style.display = 'block';
+    }
+
+    document.getElementById("submitbutton").addEventListener("click",submittedForm);
+
+    </script>
   </body>
 </html>
