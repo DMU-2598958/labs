@@ -54,9 +54,10 @@ header{
   height: 100%;
 }
 .evora_logo{
-  margin: 0 auto;  
+  margin: 0 auto;
   display: block;
   width: 170px;
+  height: 210px;
   padding-top: 40px;
 }
 footer{
