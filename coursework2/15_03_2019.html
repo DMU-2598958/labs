@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
   <link rel="shortcut icon" href="img/favicon.ico">
   </head>  <!--All the comments relative to the <head>, <header>, <nav> and <footer> elements, that are common to all, are all in the 'index.html' page-->
-  <body>
+  <body>   
     <article class="">
       <header>
         <div class="background"></div>
@@ -44,6 +44,7 @@
       <section>
         <h2 class="h215">15.03.2019</h2>
         <p class="p15">This was the first strike in which the regional nucleus participated, under the slogan #FazPeloClima (#DoItForTheClimate). In Évora were concentrated around 600 demonstrators of the 20 thousand that registered at national level, including islands.</p>
+      <!--The gallery is created using divs, one wrapping everything up, the other for the row, and, finally, one for the column. Every image as an 'onclick="openModal();currentSlide(x)"' to link the image to the JavaScript and make the Modal appear when a image is pressed. It also tells the number of the slide.-->
         <div class="gallery15">
           <div class="row15">
             <img src="img/strikes_and_actions/15.03.2019/DSC_0089.jpg" alt="People with banners at a strike" onclick="openModal();currentSlide(10)">
@@ -57,7 +58,9 @@
             <img src="img/strikes_and_actions/15.03.2019/DSC_0253.jpg" alt="People with banners at a strike" onclick="openModal();currentSlide(18)">
           </div>
         </div>
+      <!--The modal is divided into divs with the same class. Every div has the number of the image and the image The exit 'X' and the arrows were made using the HTML Entity (Decimal).-->
         <div id="Modal" class="modal">
+          <!--This <span> contains the "X" that, when clicked, closes the Modal - onclick="closeModal()"-->
           <span class="close cursor" onclick="closeModal()">&times;</span>
           <div class="modal-content">
             <div class="slides">
@@ -172,13 +175,14 @@
               <div class="numbertext">28/28</div>
               <img src="img/strikes_and_actions/15.03.2019/DSC_0633.jpg" alt="Speaker at a strike" style="width:100%">
             </div>
-
+          <!--Two anchor elements were used to create the next and previous buttons, linked to the JavaScript function 'plusSlides'.-->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           </div>
           <div class="route15">
             <h2 class="h215">Route</h2>
+            <!--An inline frame is used to embed another document within the current HTML document, in this case, a map from My Maps (from Google).-->
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UgjC_yA_KdIHRiO6gqn29rwnErpaWMfj" width="100%" height="500px"></iframe>
           </div>
       </section>
