@@ -11,27 +11,28 @@
       the type attribute describes what type of document it is.-->
       <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--This font from Google Fonts was added and then linked to the style sheet to be applied to all the pages.-->
-<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="shortcut icon" href="img/favicon.ico"> <!--To add an icon to the browser tab, the logo of the movement was converted to a favicon, using an online converter.-->
   </head>
   <body>
-    <article class=""> <!--I'm going to use the semantic HTML elements to add some structure and help describe the contents of my page, starting with an article,
+    <article class=""> <!--Semantic HTML elements were used to add some structure and help describe the contents of the page, starting with an article,
     a self-contained composition-->
-      <header>
-        <div class="background"></div>
-        <!--To add an image to a website we need to use the <img> tag, then,inside that, we need to put two attributes: the source, that tells where
-        the image is, and the alt attribute, that provides a small description of the image to the browser, it's also what the screen reader will read.
-        With the style attribute, I told the browser to limit the width of the image to 100%, so that it can't be any wider than the device it's in.-->
+      <header> <!--Inside the article, a header was added, which, in this case, is going to mark an introduction content.-->
+        <div class="background"></div> <!--This <div> was added to allow the background image to be styled without affecting the whole header. Ex: reducing the opacity.-->
+    <!--To add an image to a website it is necessary to use the <img> tag, then, inside that, we need to put two attributes: the source, which tells where the image is, and the alt attribute, which provides a small description of the image to the browser, it's also what the screen reader will read. With the style attribute, the browser is told to limit the width of the image to 100%, so that it can't be any wider than the device it's in.	The <img> element is inside an anchor element to create an easy link to the homepage.-->
         <a href="index.html">
         <img class="evora_logo" src="img/logo_Evora.png" alt="Fridays For Future Evora Logo" style="max-width: 100%">
         </a>
+    <!--A <h1> is being used to tell the browser this is the most important heading. The <h2> is the second most important heading in this webpage. The classes were added so that they could be customized individually.-->
         <h1 class="title">Fridays For Future</h1>
         <h2 class="subtitle">Evora</h2>
       </header>
+    <!--A <div> defines a division or a section. In this case, it is grouping the elements used to create the burger icon. The burger icon was created by using empty divs. Those divs were then styled in CSS to create the desired burger style.-->
       <div class="burger" id="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
+    <!--The <nav> tag defines a set of navigation links. The <nav> was used to make the menu. Inside it, the menu structure was created using an unordered list with list items. Each list item has an <a> element, creating a link to every page.-->
       <nav id="menu">
         <ul class="navbar">
           <li><a href="contact.html">Contact</a></li>
@@ -48,28 +49,32 @@
           </li>
         </ul>
       </nav>
+    <!--Just like the burger, the cover that will stay behind the menu to darken the page and, when clicked, close the menu, was created using an empty <div>. The <div> will then be styled with CSS.-->
       <div id="cover"></div>
       <section> <!--The <section> element represents a generic section of a document, in this context is a group of related content.-->
         <h2 class="WWD">What we do:</h2>
+    <!--Used the <p> element to add paragraphs of text.-->
         <p class="WWDp">The Student Climate Strike is a collective of students who fight for climate justice.</p>
         <p class="WWDp2">"We are fighting for our future and our lives because they are directly threatened by the
           climate crisis and the ecological breakdown. We are taking action against it because we want to protect
           the beauty of the earth, the diversity of species and the lives of all beings. Our goal is to overcome the
           climate crisis and to create a society that lives in harmony with its fellow beings and its environment."</p>
+      <!--To create the 'diagonal' image holder was used a <div> only with the text on a <p> element. The rest was done using CSS. -->
         <div class="mphoto">
           <p id="mtext">IT'S A MOVEMENT</p>
         </div>
-      </section>
+      </section><!--A new section was created to separate the content.-->
       <section>
         <h2 class="OH">Our history:</h2>
         <p class="OHp">The Évora regional group emerged in February 2019 when some of its members became aware
-          that the international movement <a href="https://fridaysforfuture.org/">#FridaysForFuture</a> and <a href="https://globalclimatestrike.net/">#SchoolStrike4Climate</a> had also been created in
+          that the international movement <a href="https://fridaysforfuture.org/">#FridaysForFuture</a> and <a href="https://globalclimatestrike.net/">#SchoolStrike4Climate</a> had also been created in <!--Inside the anchor element, an HTML attribute was used to tell the browser where to navigate to, in this case, the #FridaysForFuture and #SchoolStrike4Climate pages.-->
           Portugal under the name of Greve Climática Estudantil (Student Climate Strike).
           The international movement began in August 2018, after Greta Thunberg and other young
           activists sat in front of the Swedish parliament to protest against the
           lack of action on the climate crisis. She posted what she was doing on Social Media and it
           soon went viral.
         </p>
+      <!--The elements used in the animation were placed inside a <div> to be grouped. The animation was created using images that would then be animated using CSS. Except for the earth, that image would be simply centred on the page.-->
         <div class="rotation">
           <img id="innertext" src="img/svg/innertext.svg" alt="There is no Planet B!">
           <img id="outertext" src="img/svg/outertext.svg" alt="There is no Planet B!">
@@ -80,8 +85,10 @@
           the anti-fascist, the anti-racist, the cause for the rights of students, and the fair energy transition.
           Therefore, the movement has been expanding its goals.</p>
       </section>
+    <!--A footer is usually added at the bottom of an article or page with copyright and/or other information. In this case, will invite the users to visit the Social Media profiles of the movement. It also presents the creator of the website.-->
       <footer>
         <h2 class="FUOSM">FOLLOW US ON SOCIAL MEDIA</h2>
+    <!--Icons were used to display the different Social Media profiles. An anchor element was used to make a direct link to the profiles.-->
         <div class="socialmedia">
         <a href="https://twitter.com/FFFPortugal?s=20"><img class="twitter" src="img/icons/twitter.png" alt="Twitter Icon"></a>
         <a href="https://www.facebook.com/greveclimaticaestudantil"><img class="facebook" src="img/icons/facebook.png" alt="Facebook Icon"></a>
@@ -91,6 +98,7 @@
         <p>Website made by Carolina Roques (P2598958)</p>
       </footer>
     </article>
+    <!--Just like the CSS external sheet, the same has to be done to link the pages to the JavaScript used. This element is put right before the end of the body, and link to the external sheet using a source attribute.-->
     <script src="java/app.js"></script>
   </body>
 </html>
