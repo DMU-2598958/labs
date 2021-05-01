@@ -2,24 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'/> <!--I used the <meta> tag to describe information about the page, in this case I'm telling
-      the browser to match the website width with the width of the device in which the website is being seen.
-      By adding this my page is now mobile friendly.-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
       <title>Fridays For Future Evora</title>
-      <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
-        the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
-        the type attribute describes what type of document it is.-->
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico">
-  </head>
+  </head>   <!--All the comments relative to the <head>, <header>, <nav> and <footer> elements, that are common to all, are all in the 'index.html' page-->
   <body>
     <article class="">
       <header>
         <div class="background"></div>
-        <!--To add an image to a website we need to use the <img> tag, then,inside that, we need to put two attributes: the source, that tells where
-        the image is, and the alt attribute, that provides a small description of the image to the browser, it's also what the screen reader will read.
-        With the style attribute, I told the browser to limit the width of the image to 100%, so that it can't be any wider than the device it's in.-->
         <a href="index.html">
         <img class="evora_logo" src="img/logo_Evora.png" alt="Fridays For Future Evora Logo" style="max-width: 100%">
         </a>
@@ -50,10 +43,12 @@
       <div id="cover"></div>
       <section class="contact">
         <h2 class="h2contact">Contact</h2>
+        <!--Instead of making three different paragraphs, the <br> tag was used to insert a single line break.-->
         <p class="contactp">Do you have any ideas or suggestions? <br> We would be happy to hear from you! <br> Send us a message!</p>
         <div class="containerform">
+          <!--Usually, the information received by a form is stored on a PHP page. However, GitHub doesn't support PHP, and the only way to store information was by using a third-party program. Having that in mind, it was decided that the form would be made, but it wouldn't store information, only present a confirmation message.-->
           <form class="" id="contactform">
-
+        <!--A form is created by using label tags that define a label for several elements; an input field, where the user can enter data, is the most important form element. In this case, the <input> tag has the 'text' and 'submit' types. A 'placeholder' presents a text in the input box before anything is written.-->
             <label for="Fname">Name</label>
             <input type="text" id="Fname" name="firstname" placeholder="Your name...">
 
@@ -66,6 +61,7 @@
             <input id="submitbutton" type="submit" value="Submit">
           </form>
         </div>
+        <!--Message to be displayed once the submit button is pressed-->
         <div id="status">Thank you for your messsage!</div>
       </section>
       <footer>
@@ -99,7 +95,7 @@
       evt.preventDefault();
       document.getElementById("status").style.display = 'block';
     };
-    
+
 //Finally, an event is added to the button, to, when clicked, trigger the 'submittedForm' function, making the phrase appear.
     document.getElementById("submitbutton").addEventListener("click",submittedForm);
 
