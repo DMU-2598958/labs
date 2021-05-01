@@ -1,4 +1,7 @@
+//To make the menu appear and disappear when pressed it was necessary to use JavaScript. Starting by creating two functions (a way of grouping lines of code, giving them a name): the first, called 'openMenu', that has the necessary settings for the menu to be seen; and the second, 'closeMenu' that returns the element to its original size.
 openMenu = () => {
+//Referencing HTML elements on Java is done using the 'document' object and, in this case, to reference an element using its Id, it is used the 'getElementById'.
+//
   document.getElementById("menu").style.right = '0';
   document.getElementById("cover").style.right = '0';
 };
