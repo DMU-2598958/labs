@@ -2,24 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'/> <!--I used the <meta> tag to describe information about the page, in this case I'm telling
-      the browser to match the website width with the width of the device in which the website is being seen.
-      By adding this my page is now mobile friendly.-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <title>Fridays For Future Evora</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
-      the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
-      the type attribute describes what type of document it is.-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> <!--Added this font from Google Fonts and then linked it to the style sheet to be applied to all the pages.-->
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico">
-  </head>
+</head>     <!--All the comments relative to the <head>, <header>, <nav> and <footer> elements, that are common to all, are all in the 'index.html' page-->
   <body>
     <article class="">
       <header>
         <div class="background"></div>
-        <!--To add an image to a website we need to use the <img> tag, then,inside that, we need to put two attributes: the source, that tells where
-        the image is, and the alt attribute, that provides a small description of the image to the browser, it's also what the screen reader will read.
-        With the style attribute, I told the browser to limit the width of the image to 100%, so that it can't be any wider than the device it's in.-->
         <a href="index.html">
         <img class="evora_logo" src="img/logo_Evora.png" alt="Fridays For Future Evora Logo" style="max-width: 100%">
         </a>
@@ -49,6 +42,7 @@
       </nav>
       <div id="cover"></div>
       <section>
+    <!--The countdown was placed into a <div>. The days, hours, minutes, and seconds text were created using <p> elements. The results for the time left, calculated by the variable in the Java sheet, are placed inside an <b> element, to make the numbers bold. They are accompanied by an <em> (used to define emphasized text) with the words' initials.-->
         <div class="CD">
         <div id="countdown" class="countdown">
           <p class="day">
@@ -71,11 +65,12 @@
         <p class="countdowntext">until the global strike!</p>
         </div>
         <p class="SaA">International strikes are always on Fridays due to the symbolism of the international movement #FridaysForFuture. The goal is to be in class hours, so that schools feel like students who missed classes for a better future.</p>
+     <!--The layout of the next <div> was based on a blog page created for Social Media's first coursework (https://cultureshock2598958.wordpress.com/blog/). To accomplish that, the HTML needed was only a couple of <div>s. Each has an image element, an <h2>, with the title of the strike, and an anchor element linking it to the strike's page. And, lastly, an <p> element with the beginning of the description written on the strike's page.Every <div> grouping the text has the same class to be styled in the same way, the same happens with the <p> elements.-->
         <div class="PS">
           <h2 id="PSh">Previous Strikes</h2>
           <div class="first">
             <img id="img1" src="img/strikes_and_actions/25.09.2020/IMG_9003.jpg" alt="Evora's Roman Temple">
-            <div class="h1">
+            <div class="h2">
               <h2><a href="25_09_2020.html">25.09.2020</a></h2>
               <p class="p1">Due to the Covid-19 pandemic, instead of the usually strike (...)</p>
             </div>
@@ -102,6 +97,7 @@
             </div>
           </div>
         </div>
+      <!--A button was created as a link to the 'Other Actions' page.-->
         <div class="buttondiv">
           <a href="other_actions.html" class="button">OTHER ACTIONS</a>
         </div>
