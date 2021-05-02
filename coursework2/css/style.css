@@ -18,43 +18,42 @@ or
 .class{
 property: value;
 }*/
-*{
+*{ /*The * selector selects all elements.The box-sizing property defines how the width and height of an element are calculated, in this case it will calculate including the content, padding and border*/
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body{
-  font-family: 'Rubik', sans-serif; /*used this CSS rule to add the font from Google Fonts to all the body's page*/
-  background-color: #078544;
-  color: #F6FFFF;
-  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif; /*this CSS rule was used to add the font from Google Fonts to all the body's page*/
+  background-color: #078544; /*This rule in CSS is used to change the background colour*/
+  color: #F6FFFF; /*The color rule in CSS is used to change the text colours*/
 }
 header{
   text-align: center;
   align-items: center; /*to align the header text to the center of the page*/
-  letter-spacing: 1px;
-  position: relative;
-  font-size: 25px;
-  padding-bottom: 40px; /*used the padding rule to increase, by 20 pixels, the spacing between the content and the edge of the element*/
+  letter-spacing: 1px; /*changes the space between the letters*/
+  position: relative; /*The position property specifies the type of positioning method used for an element - in this case the element is positioned relative to its normal position*/
+  font-size: 25px; /* used to change the sizeof the font*/
+  padding-bottom: 40px; /*used the padding rule to increase, by 40 pixels, the spacing between the content and the edge of the element*/
 }
 .subtitle{
-  font-size: 25px;
+  font-size: 25px; /* used to change the sizeof the font*/
 }
 .background{
   background-image: url("../img/header_background/header.jpg"); /*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
-  In this case I'm giving the header a backgound image that is inside a folder called 'img' and has the name '...'*/;
-  opacity: 0.8;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center 40%;
-  background-attachment: fixed;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
+  In this case, the background image is inside a folder called 'img' and has the name 'header_background'*/
+  opacity: 0.8; /*this rule was used so that the text was clear to read*/
+  background-size: cover; /*used to resize the background image to cover the entire container*/
+  background-repeat: no-repeat; /* rule used to make the image only show once*/
+  background-position: center 40%; /*used to position the image in the right place showing only the desired*/
+  background-attachment: fixed; /*This rule is use to fix the background image to the page, that way, when scrolling up and down in the page, the image isn't going to scroll with it.*/
+  position: absolute; /*The element is positioned relative to its first positioned ancestor element*/
+  z-index: -1; /*the z-index specifies the stack order of an element. In this case the background image is behing the text and logo image*/
+  width: 100%; /*sets the width and height to the whole page, even if not seen*/
   height: 100%;
 }
 .evora_logo{
-  margin: 0 auto;
+  margin: 0 auto; /*these rules were used to set the size of the logo, place it in the middle of the page and create a spade betweent the logo and the text*/
   display: block;
   width: 170px;
   height: 210px;
@@ -189,7 +188,7 @@ nav ul li ul li a{
   bottom: 0px;
   left: 0px;
   background-image: url("../img/DSC_0037.jpg");
-  background-attachment: fixed;
+  background-attachment: fixed; /*This rule is use to fix the background image to the page, that way, when scrolling up and down in the page, the image isn't going to scroll with it.*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
