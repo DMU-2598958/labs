@@ -168,6 +168,14 @@ It is by clicking on the cover that the menu closes.*/
   padding-bottom: 20px;
   line-height: 30px;
 }
+.WWDp2{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
 /*To create the shape a clip-path was used. The clip-path property allows clipping an element to a basic shape. In this case, a 'crooked rectangle' was made using the values of the clip-path.
 Its height was set along with its width that should occupy the whole page. Its position must be set to relative to keep the child within bounds.*/
 .mphoto{
@@ -207,7 +215,7 @@ Y-axis to -50%.*/
   transform: translateY(-50%);
 }
 .OHp{
-  text-align: center;
+  text-align: center;  /*Basic CSS rules to set the size of the text and its position, for the paragraph.*/
   padding-left: 30px;
   padding-right: 30px;
   font-size: 18px;
@@ -262,7 +270,7 @@ half as said in the proposal. Two different animations were created so that one 
 @keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
 @keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
 
-.OHp2{
+.OHp2{                       /*Basic CSS rules to set the size of the text and its position, for the paragraph.*/
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
@@ -274,14 +282,12 @@ half as said in the proposal. Two different animations were created so that one 
   margin-bottom: 50px;
 }
 .countdown{
-  display: flex;
-  flex-direction: row;
+  display: flex; /*to place the days, hours, minutes and seconds next to each other, the display: flex was used. The content was justified to the center to centre the countdown in the middle of the page.*/
   justify-content: center;
   padding-top: 40px;
 }
-b{
+b{                                  /*Basic CSS rules used to set the size of the number and text and its position.*/
   font-size: 40px;
-  transition: transform 0.3s ease-in-out;
 }
 em{
   padding-right: 10px;
@@ -295,18 +301,18 @@ em{
 .PS{
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 50px;
+  margin-top: 50px;                   /*Basic CSS rules used to set the size of the text (headings and pragraphs) and its position.*/
 }
 .PS a{
   text-decoration: none;
   color: #F6FFFF;
-  border-bottom: 4px solid #37BFAF;
+  border-bottom: 4px solid #37BFAF; /*The bordeer was added to emphazise the heading, making it easier to know that is a link to another page.*/
 }
 .PS img{
   max-width: 100%;
 }
 #PSh{
-  margin-left: auto;
+  margin-left: auto;   /*the right and left margins set to auto center the heading on the page*/
   margin-right: auto;
   text-align: left;
   font-size: 28px;
@@ -318,6 +324,9 @@ em{
 .p1{
   margin-top: 20px;
 }
+/*The following rules customize the button. Setting its position on the page, its size and the background image. A box-shadow is also added to
+add depth to the button. The corners were rounded using the border radius. The cursor was set to 'pointer', however, it can only be seen in the pc version since the mobile doesn't have a cursor.
+The text also has a shadow to help it stand out from the image behind it.*/
 .buttondiv{
   text-align: center;
   margin-top: 30px;
@@ -345,10 +354,10 @@ em{
 }
 .h225,
 .h227,
-.h224,
+.h224,                               /*Since all the strikes pages have a similar layout, many selectors were assigned with the same rules*/
 .h215,
 .h2OA{
-  text-align: center;
+  text-align: center;    /*Used to align the heading in the centre and set its position and font size*/
   margin-top: 50px;
   margin-bottom: 40px;
   font-size: 30px;
@@ -358,7 +367,7 @@ em{
 .p27,
 .p24,
 .p15{
-  text-align: center;
+  text-align: center;   /*Used to align the heading in the centre and set its position and font size*/
   padding-left: 30px;
   padding-right: 30px;
   font-size: 18px;
@@ -368,10 +377,10 @@ em{
   color: inherit;
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 4px solid #37BFAF;
+  border-bottom: 4px solid #37BFAF; /*Used to give the anchor a border in the bottom with a specific colour*/
 }
 .goals{
-  margin-left: 10%;
+  margin-left: 10%;  /*the left and right margins were set to a percentage so they could change depending on the size of the screen*/
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 10%;
@@ -387,20 +396,23 @@ em{
   font-size: 22px;
 }
 .goals ul li ul li{
-  list-style: initial;
-  list-style-position: inside;
+  list-style: initial; /*the list style was taken to the first li but added again to the second*/
+  list-style-position: inside; /*The list-style-position property specifies the position of the list-item markers - inside means that the bullet points will be inside the list item*/
   font-size: 18px;
 }
 .row25{
   margin-top: 50px;
 }
 .column25{
-  display: flex;
+  display: flex; /*the display was set to flex so that the photos can seat next to each other*/
 }
 .column25 img{
-  width: 50%;
+  width: 50%; /*the width was set to 50% so that both images could fit properly in the width of the page.*/
   cursor: pointer;
 }
+/*these rules were used to customize the background of the modal. The z-index was set to 11 so it above everything on the page.
+The overflow property specifies what should happen if content overflows an element's box, in this case, if overflow is clipped, a scroll bar should be added to see the rest of the content
+The modal has the width and height set to occupy the whole page*/
 .modal{
   display: none;
   position: fixed;
@@ -412,14 +424,15 @@ em{
   overflow: auto;
   background-color: #081B29;
 }
+/*the way used to place the image in the middle was by setting its top position to 50% and then transform the Y-axis to -50%.*/
 .modal-content{
   position: relative;
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
-  width: 90%;
+  width: 90%; /*the width was set to 90% so it doesn't occupy the entire page's width*/
 }
-.close{
+.close{ /*the 'X''s colour was set to white and it was placed on the top right corner of the page*/
   color: white;
   position: absolute;
   top: 10px;
@@ -428,16 +441,16 @@ em{
   font-weight: bold;
 }
 .close:hover,
-.close:focus {
+.close:focus { /*even though it can only be seen in the pc view, when hovered the X it is going to change colour*/
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-.slides{
+.slides{ /*the slides display is set to none but that it then change, on the JavaScript, when an image is pressed*/
   display: none;
 }
 .prev,
-.next {
+.next { /*these properties set the size, position and style of the next and previous buttons.*/
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -449,24 +462,29 @@ em{
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  user-select: none; /*The user-select property specifies whether the text of an element can be selected, the 'none' prevents text selection*/
 }
 .next {
-  right: 0;
+  right: 0; /*Position the "next button" to the right*/
   border-radius: 3px 0 0 3px;
 }
 .prev:hover,
-.next:hover {
+.next:hover { /*on the pc view, when hovered, the arrow gains a background colour*/
   background-color: rgba(0, 0, 0, 0.8);
 }
-.numbertext {
+.numbertext { /*style and postition the numbers on the top left of the image*/
   color: #f2f2f2;
   font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-.gallery27{
+/*the next selectors for the gallery, columns and rows all have basically the same rules with different specifications.
+The gallery establishes the distance between the gallery and the other page elements. Some galleries have the display set to flex to allow the image/column to seat next to each other.
+The rows or column might also have the display set to flex to allow the images to sit next to each other. The width of the images is set depending on the number of images,
+so that, when summed gives 100%, the full width of the page.*/
+.gallery27,
+.gallery24{
   display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -498,16 +516,11 @@ em{
   text-decoration-color: #37BFAF;
   letter-spacing: 2px;
 }
-iframe{
+iframe{ /*The border of the iframe was taken out so the frame could occupy the whole page's width.*/
   max-width: 100%;
   border: none;
 }
-.gallery24{
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.gallery24 img,
+.gallery24 img, /*the cursor changes to the pointer on the pc view to tell the visitor that it is possible to click on the images.*/
 .gallery15 img,
 .galleryoa img,
 .galleryoa2 img{
@@ -590,7 +603,16 @@ iframe{
   margin-top: 50px;
   font-size: 30px;
 }
-.containerform{
+.contactp{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+.containerform{ /*the container of the form was styled, a background colour was added as well as a border-radius to round the corners and a
+  box-shadow to increase the depth. Its position was set using the margin rule and its width was set to 70%, occupying almost the whole page.*/
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -601,25 +623,26 @@ iframe{
   margin-bottom: 40px;
   box-shadow: 8px 6px 14px 2px rgba(38,38,38,0.19);
 }
-input[type=text], select, textarea {
+input[type=text], select, textarea { /*Style inputs with type="text", select elements and textareas*/
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+  box-sizing: border-box; /*Added to make sure that padding and width stays in place*/
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
+  resize: vertical; /*Allow the user to vertically resize the textarea (not horizontally)*/
 }
-input[type=submit]{
+input[type=submit]{ /*style the submit button a specific background colour and size*/
   background-color: #078544;
-  color: #F6FFFF;
+  color: #F6FFFF; /*colour of the text in the button*/
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; /*the cursor changes to the pointer on the pc view to tell the visitor that it is possible to click on the button.*/
 }
-#status{
+#status{ /*styling the status message and put its display to none. Once the button is pressed, with JavaScript, the display is going to change to 'block', showing the message.
+A transition was added to ease the the appearance of the phrase.*/
   width: 100%;
   text-align: center;
   padding: 10px;
@@ -627,14 +650,6 @@ input[type=submit]{
   margin-bottom: 30px;
   transition: all 0.5s ease;
   display: none;
-}
-.contactp{
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 18px;
-  line-height: 30px;
-  padding-top: 30px;
 }
 
 
@@ -714,7 +729,7 @@ input[type=submit]{
       padding-left: 250px;
       padding-right: 250px;
       line-height: 30px;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
     }
     .OHp{
       padding-left: 250px;
