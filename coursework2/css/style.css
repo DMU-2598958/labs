@@ -60,45 +60,43 @@ header{
   padding-top: 40px;
 }
 footer{
-  background-color: #081B29;
+  background-color: #081B29; /*these CSS rules customize the footer, setting the background colour, the font size of the 'Website made by...' phrase and placing the width to occupy the whole page. The padding was added so that the text doesn't touches the sides of the page.*/
   font-size: 12px;
   width: 100%;
   padding: 10px;
-  bottom: 0;
 }
-.FUOSM{
+.FUOSM{ /*the Social Media text was aligned to the center of the page using 'text-align'. The pading bottom was used to create more space between the text and the icons.*/
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
   font-size: 20px;
-  line-height: 30px;
   padding-bottom: 15px;
 }
-.socialmedia{
+.socialmedia{ /*To place the icons next to each other was used the display: flex and then were justified to the place around to give space before, between, and after them. Finally, the padding-left and right were used to centre the icons and the padding-bottom to create more space between the icons and the text.*/
   display: flex;
   justify-content: space-around;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
 }
-.twitter, .facebook, .instagram, .youtube{
+.twitter, .facebook, .instagram, .youtube{ /*used to set the width and height of every icon tothe same values*/
   width: 30px;
   height: 30px;
 }
-.burger{
+.burger{ /*these rules were used to set the position of the burger. The position is fixed which means that the element is positioned relative to the browser window, the element doesn't move with the page, he stays put in his position. Making it easy to access in every part of the page.*/
   display: block;
   cursor: pointer;
   position: fixed;
   top: 20px;
   right: 20px;
 }
-.burger div{
+.burger div{ /*to create the burger form the divs were set to have a white background and the width and height were set to create the correct size of the three lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
   width: 25px;
   height: 4px;
   background-color: white;
   margin: 5px;
   border-radius: 5px;
 }
+/*The next selectors and rules are customizing the nav. The background was set to the same colour as the page, and the menu occupies almost the whole page when open. The z-index was set to 10 so the menu stays on top of everything.
+The menu is hidden on the right side (right: -100%), which changes once the function in JavaScript is activated. A CSS transition was added to smooth the arising of the menu. The overflow-y was set to scroll so the users can scroll down to access every option of the menu. */
 nav{
   background-color: #078544;
   height: 100vh;
@@ -114,6 +112,8 @@ nav{
   width: 75vw;
   overflow-y: scroll;
 }
+/*These rules are customizing the list style and the text. On the main ul, the list style was set to none and the text was align to the left, adding padding so that the text doesn't touch the margin of the menu. The colour was set to the same used in the page
+and a border with a light green was added. When hover/pressed the colour changes. To the second ul, a dot was added to the front of every li.*/
   nav ul{
     list-style: none;
     position: relative;
@@ -141,8 +141,9 @@ nav ul li ul li a{
   font-size: 25px;
   font-weight: 500;
   border-bottom: none;
-
 }
+/*The cover covers the whole page, but it's behind the menu. Its opacity was set to 0.4 so that it darkens the page, but it doesn't cover it completely.
+It is by clicking on the cover that the menu closes.*/
 #cover{
   position: fixed;
   top: 0;
@@ -152,8 +153,9 @@ nav ul li ul li a{
   background-color: #243C52;
   opacity: 0.4;
 }
-.WWD{
-  text-align: center;
+.WWD,
+.OH{
+  text-align: center;      /*Basic CSS rules to set the size of the text and its position, for both heading and paragraphs.*/
   padding-top: 50px;
   padding-bottom: 40px;
   font-size: 30px;
@@ -166,20 +168,17 @@ nav ul li ul li a{
   padding-bottom: 20px;
   line-height: 30px;
 }
-.WWDp2{
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 18px;
-  padding-bottom: 40px;
-  line-height: 30px;
-}
+/*To create the shape a clip-path was used. The clip-path property allows clipping an element to a basic shape. In this case, a 'crooked rectangle' was made using the values of the clip-path.
+Its height was set along with its width that should occupy the whole page. Its position must be set to relative to keep the child within bounds.*/
 .mphoto{
   height: 400px;
   position: relative;
   clip-path: polygon(0 12%,0 100%,100% 88%,100% 0);
   max-width: 100%;
 }
+/*In order to change the opacity of the background image without affecting the text in it, the background was styled using a pseudo-element. This will ensure that the background image and the text content will be on their own “layer” in the parent.
+To make that pseudo-element the same size as the parent, it is necessary to absolutely position it and set its top, right, bottom, and left values to zero so it doesn’t collapse. Also, as a pseudo-element, it needs to have the content property set, otherwise, it won’t show up on the page.
+After that, the image was customized as desired using the 'background-' rules.*/
 .mphoto::before{
   content: '';
   position: absolute;
@@ -188,12 +187,15 @@ nav ul li ul li a{
   bottom: 0px;
   left: 0px;
   background-image: url("../img/DSC_0037.jpg");
-  background-attachment: fixed; /*This rule is use to fix the background image to the page, that way, when scrolling up and down in the page, the image isn't going to scroll with it.*/
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.7;
 }
+/*In the text, the position needs to be set to relative so that it will be on top of the pseudo-element and background image.
+Besides the basic rules to customize the text, the way used to place the text in the middle was by setting its top position to 50% and then transform the
+Y-axis to -50%.*/
 #mtext{
   position: relative;
   text-align: center;
@@ -204,12 +206,6 @@ nav ul li ul li a{
   top: 50%;
   transform: translateY(-50%);
 }
-.OH{
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  font-size: 30px;
-}
 .OHp{
   text-align: center;
   padding-left: 30px;
@@ -218,13 +214,19 @@ nav ul li ul li a{
   line-height: 30px;
 }
 .OHp a{
-  color: #37BFAF;
+  color: #37BFAF; /*Used to change the colour of the anchor element inside the paragraph of text.*/
   font-weight: bold;
 }
+/*The div where the animation is going to happen needs to have a relative position, and the overflow set to hidden, to hide the parts of the image that get off the page, making it expand every time the image spins.*/
 .rotation{
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
+/*All the images were set to the width and height there were created so that everything is placed properly in place. The earth was placed in the middle using the
+'margin-left/right:auto' The images with the text were absolutely positioned and placed in the right place by setting the margin to auto and the
+left and right properties to 0. In both the z-index was set to 1, so that these images are above the earth one. In the inner text, the opacity was set to
+half as said in the proposal. Two different animations were created so that one could spin to the right and the other to the left.*/
 #earth{
   width: 601.52px;
   height: 601.83px;
@@ -256,10 +258,10 @@ nav ul li ul li a{
   z-index: 1;
   animation: rotate1 20s linear infinite;
 }
-.rotation{
-  width: 100%;
-  overflow: hidden;
-}
+/*The animation is created by gradually changing from one set of CSS styles to another. In this case, the images will turn from 0 degrees to 360 or -360 in 20 seconds in an infinite way, meaning that it will not stop spinning.*/
+@keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
+@keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
+
 .OHp2{
   text-align: center;
   padding-left: 30px;
@@ -635,8 +637,6 @@ input[type=submit]{
   padding-top: 30px;
 }
 
-@keyframes rotate { 0% { transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
-@keyframes rotate1 { 0% { transform: rotate(0deg);} 100% {transform: rotate(-360deg);} }
 
 
 @media screen and (min-width: 976px) and (min-height: 650px) {
