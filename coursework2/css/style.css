@@ -653,16 +653,19 @@ A transition was added to ease the the appearance of the phrase.*/
 }
 
 
-
+/*The @media rule is used in media queries to apply different styles for different media types/devices. Using media queries are a popular technique for delivering a responsive web design. The 'screen' value
+is used for computer screens, tablets, smartphones etc. The minimum height and width represent the minimum values that the display area has to have to receive the style inside this @media query.
+This rule was used mostly to create a responsive menu, meaning that there is a different menu for mobile view and pc view. Besides that main difference, the query was only used to change
+minor things like values of paddings, margins and font sizes. It was also used to add a pseudo-element, ':hover', to some of the buttons, links or headings.*/
 @media screen and (min-width: 976px) and (min-height: 650px) {
 
-  .burger{
+  .burger{ /*hide the burger*/
     display: none;
   }
-  #cover{
+  #cover{ /*hide the cover*/
     display: none;
   }
-  nav{
+  nav{ /*sets the nav to the full width of the page, adds a background colour and places it in the right place on the page.*/
     right: inherit;
     display: inline-block;
     height: auto;
@@ -672,7 +675,9 @@ A transition was added to ease the the appearance of the phrase.*/
     text-align: center;
     background-color: #37BFAF;
   }
-    .navbar{
+    .navbar{ /*sets the width and height to auto, and the padding and margin to 0, centring the text on the middle. Then, the display is changed
+      to flex, which means now the text is sitting side to side. The justify-content is set to space around to evenly distribute the text in the element.
+      The overflow-y is set to 'inherit' to eliminate the rule added in the mobile view.*/
       width: auto;
       height: auto;
       padding: 0px;
@@ -682,7 +687,7 @@ A transition was added to ease the the appearance of the phrase.*/
       justify-content: space-around;
       overflow-y: inherit;
   }
-  nav ul li a{
+  nav ul li a{ /*these rules customize the anchor elements on the first listed items*/
       text-decoration: none;
       color: #F6FFFF;
       font-size: 18px;
@@ -691,7 +696,8 @@ A transition was added to ease the the appearance of the phrase.*/
       border-bottom: none;
       padding-bottom: 0;
   }
-    nav ul ul{
+    nav ul ul{ /*these rules customize the appearance of the second unlisted item. To make it appear only when it is hovered, the opacity is set to 0
+      and visibility is set to hidden. A transition is added so that the ul takes 3s. to appear.*/
       position: absolute;
       top: 80px;
       transition: top .3s;
@@ -701,12 +707,13 @@ A transition was added to ease the the appearance of the phrase.*/
       visibility: hidden;
       list-style: none;
   }
-  nav ul li:hover > ul{
+  nav ul li:hover > ul{ /*The element>element selector is used to select elements with a specific parent. In this case is the <li> inside the <ul>.
+    The opacity and visibility values change to show the <ul>*/
     top: 70px;
     opacity: 1;
     visibility: visible;
 }
-  nav ul li a:hover {
+  nav ul li a:hover { /*used to change the colour of the anchor elementes when hovered*/
     color: #078544;
   }
     nav ul li ul li a{
@@ -715,7 +722,8 @@ A transition was added to ease the the appearance of the phrase.*/
       font-weight: normal;
       padding-left: 20px;
     }
-    nav ul ul li{
+    nav ul ul li{ /*these rules customize the second list items, being that the ones that appear when hovered. The flex added to the .navbar was
+      changed to none so that the text goes down instead of to the sides.*/
       position: relative;
       margin: 0px;
       width: 170px;
