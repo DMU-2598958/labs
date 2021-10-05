@@ -1,0 +1,8 @@
+body{
+  padding: 0px;
+}
+.redsquare{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
