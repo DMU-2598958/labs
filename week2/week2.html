@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 2 lab</title>
+    <style media="screen">
+      body{
+        margin: 0;
+      }
+      img{
+        width:100%;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+
+      @media screen and (min-width: 800px){
+        img{
+          width: 50%;
+          float: left;
+        }
+        .dog,
+        .snake{
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 1000px){
+        img{
+          width:33.3333333333%;
+        }
+
+          .snake{
+            display: inline;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animals</h1>
+    <p>Here are some animals. Enjoy!</p>
+    <div class="clearfix">
+      <img src="images/alpaca.jpg" alt="alpaca">
+      <img src="images/eagle.jpg" alt="eagle">
+      <img src="images/deer.jpg" alt="deer">
+      <img src="images/wet_dog.jpg" alt="wet dog">
+      <img src="images/horse.jpg" alt="horse">
+      <img src="images/bird.jpg" alt="bird">
+      <img class="snake" src="images/snake.jpg" alt="snake">
+      <img class="dog" src="images/dog.jpg" alt="dog">
+      <img src="images/elephant.jpg" alt="elephant">
+      <img src="images/bird2.jpg" alt="bird">
+    </div>
+
+  </body>
+</html>
