@@ -35,28 +35,72 @@
     <div class="" id="score">
 
     </div>
-    <div class="" id="rtime">
+    <div class="" id="time">
 
     </div>
     <img id="mole" src="img/mole.png" alt="">
     <img id="hedgehog" src="img/hedgehog.png" alt="">
     <div id="gameover">
       <h1>GAME OVER</h1>
-      <p>You scored  points</p>
+      <p id="endScore"></p>
     </div>
     <script type="text/javascript">
+      let score = 0;
+      let timeRemaining = 30;
+      let playing = true;
+
+      hideMole = () => {
+        document.getElementById("mole").style.display = "none";
+      };
+      hideHedgehog = () => {
+        document.getElementById("hedgehog").style.display = "none";
+      };
+
       showAnimal = () => {
         let showMole = Math.random() > 0.5;
         if (showMole) {
-          document.getElementById('mole').style.display = "block";
-          setTimeout(hideMole,500)
-        } else{
-          document.getElementById('hedgehog').style.display = "block";
-          setTimeout(hideHedgehog,500)
+          document.getElementById("mole").style.display = "block";
+          setTimeout(hideMole, 500);
+        } else {
+          document.getElementById("hedgehog").style.display = "block";
+          setTimeout(hideHedgehog, 500);
         }
-      }
 
-      setTimeout(showAnimal, 1000)
+      if (playing) {
+        let newTime = Math.random() * 1500 + 500;
+        setTimeout(showAnimal, newTime);
+        }
+      };
+
+      setTimeout(showAnimal, 1000);
+
+      hitMole = () => {
+        score++;
+        document.getElementById("score").textContent = "Score: " + score;
+      };
+
+      hitHedgehog = () => {
+        score--;
+        console.log("HIT");
+        document.getElementById("score").textContent = "Score: " + score;
+      };
+
+      document.getElementById("mole").addEventListener("click", hitMole);
+      document.getElementById("hedgehog").addEventListener("click", hitHedgehog);
+
+      updateTime = () => {
+        timeRemaining--;
+        document.getElementById("time")textContent = "Time Remaining: " + timeRemaining;
+        if (timeRemaining <= 0) {
+          playing = false;
+          clearInterval(countdown);
+          document.getElementById("endScore").textContent = "You scored" + score + "points.";
+          document.getElementById("gameover").style.display = "block";
+        }
+      };
+
+      let countdown = setInterval(updateTime, 1000);
+
     </script>
   </body>
 </html>
