@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        margin:0;
+        padding:0;
+      }
+      img{
+        width:100%;
+        display:none;
+      }
+      h1{
+        text-align:center;
+        font-size: 100px;
+      }
+      p{
+        text-align:center;
+        font-size: 30px;
+      }
+      #gameover{
+        height:100vh;
+        width:100vw;
+        position: absolute;
+        top: 0;
+        background-color: #EDB9B4;
+        color: white;
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="" id="score">
+
+    </div>
+    <div class="" id="rtime">
+
+    </div>
+    <img id="mole" src="img/mole.png" alt="">
+    <img id="hedgehog" src="img/hedgehog.png" alt="">
+    <div id="gameover">
+      <h1>GAME OVER</h1>
+      <p>You scored  points</p>
+    </div>
+    <script type="text/javascript">
+      showAnimal = () => {
+        let showMole = Math.random() > 0.5;
+        if (showMole) {
+          document.getElementById('mole').style.display = "block";
+          setTimeout(hideMole,500)
+        } else{
+          document.getElementById('hedgehog').style.display = "block";
+          setTimeout(hideHedgehog,500)
+        }
+      }
+
+      setTimeout(showAnimal, 1000)
+    </script>
+  </body>
+</html>
