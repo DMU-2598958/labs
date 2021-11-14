@@ -17,7 +17,7 @@ closeMenu = () => {
 
 //To create a countdown it is necessary to use a set of variables - a container that can hold on to some data or information.
 //The first variable was used to set the date to count down to.
-  var countDownDate = new Date("Dec 19, 2021 12:00:00").getTime();
+  var countDownDate = new Date("Dec 15, 2021 20:20:00").getTime();
 //Then was created another to update the countdown every 1 second.
   var x = setInterval(function() {
 //A variable to get the current date.
