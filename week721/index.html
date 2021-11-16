@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz week7</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        <h1>Quiz</h1>
+        <h2>Question <span id="currentQuestionNumber">1</span></h2>
+        <p id="question"></p>
+        <div class="answerContainer" id="answers"></div>
+
+        <script type="text/javascript">
+
+         let questions = [
+            { question: "How many stars are in the UN flag?", answers: [10, 12, 15], correct: 1 },
+            { question: "How many hours are in a week?", answers: [162, 160, 168], correct: 2 },
+            { question: "367+298", answers: [665, 678, 655], correct: 0 },
+            { question: "How many stars would you give to the movie Dune?", answers: [0, 1, 2, 3, 4, 5], correct: 4 },
+            { question: "How many leafs?", answers: [2, 5, 6], correct: 1 }
+          ];
+
+          let currentQ = 0;
+          let score = 0;
+
+          askQuestion = () => {
+            let thisQuestion = questions[currentQ];
+
+            document.getElementById("currentQuestionNumber").textContent =
+              currentQ + 1;
+
+            document.getElementById("question").textContent = thisQuestion.question;
+
+            let answerContainer = document.getElementById("answers");
+
+            while (answerContainer.firstChild) {
+              answerContainer.firstChild.remove();
+            }
+
+            for (let i = 0; i < thisQuestion.answers.length; i++) {
+              let thisButton = document.createElement("a");
+
+              thisButton.className = "answerButton";
+
+              thisButton.setAttribute("data-answer", i);
+
+              let buttonLabel = document.createTextNode(thisQuestion.answers[i]);
+
+              thisButton.appendChild(buttonLabel);
+
+              thisButton.addEventListener("click", checkAnswer);
+
+              answerContainer.appendChild(thisButton);
+            }
+          };
+
+        checkAnswer = evt => {
+          let thisQuestion = questions[currentQ];
+
+          let thisAnswer = evt.target.getAttribute("data-answer");
+
+          if (thisAnswer == thisQuestion.correct) {
+            score++;
+            }
+
+            nextQuestion();
+          };
+
+        nextQuestion = () => {
+          currentQ++;
+          if (currentQ < questions.length) {
+            askQuestion();
+          } else {
+            localStorage.setItem("score", score);
+            location.href = "end.html";
+            }
+          };
+
+          askQuestion();
+        </script>
+  </body>
+</html>
